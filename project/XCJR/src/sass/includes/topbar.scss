@@ -1,0 +1,53 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    width: $content-width;
+    .logo {
+      .table {
+        height: 62px;
+        display: table;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+    .fr {
+      ul li {
+          float: left;
+          margin: 20px  auto 12px;
+          text-align: center;
+          line-height: 18px;
+          font-size: 18px;
+          font-family: "Microsoft YaHei";
+          a {
+            display: block;
+            border-left: 1px solid #6f6f6f;
+            padding: 0 31px;
+            color: #6f6f6f;
+          }
+          .arrowup {
+            display: none;
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+            border: 8px solid transparent;
+            border-bottom-color: #2263b7;
+          }
+          &:last-child {
+            a {
+              padding-right: 21px;
+            }
+          }
+          &.active{
+            a {
+              color: #2263b7;
+            }
+            .arrowup {
+              display: block;
+            }
+          }
+      }
+    }
+  }
+}

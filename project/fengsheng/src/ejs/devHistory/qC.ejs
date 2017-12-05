@@ -1,0 +1,22 @@
+<div class="qC">
+    <div class="inner-title">
+        <span class="line"><b></b></span>
+        <span class="cn-title">资质认证</span>
+        <span class="en-title">Qualification certification</span>
+    </div>
+    <div class="intro-text">
+        <ul>
+            <% for(var j=0; j<data.qCData.length; j++){ %>
+            <li class="clearfix">
+                <div class="fl">
+                    <img src="<%= data.qCData[j].img %>" alt="资质证书">
+                </div>
+                <div class="remark fr">
+                    <h3><%= data.qCData[j].name %></h3>
+                    <p><%= data.qCData[j].info %></p>
+                </div>
+            <% } %>
+            </li>
+        </ul>
+    </div>
+</div>

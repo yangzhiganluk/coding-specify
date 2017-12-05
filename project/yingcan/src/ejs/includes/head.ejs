@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+    <title>盈灿资产-
+        <% for(var i=0; i<data.topBarData.length;i++){%>
+        <% /*传入标签中加入active类*/%>
+        <% if(data.topBarData[i].key == data.filename ){ %>
+            <%= data.topBarData[i].name %>
+        <% } %>
+        <% } %>
+    </title>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta content="从客户需求做起" name="description" />
+    <meta name="keywords" content="专业性 第三方财富管理 综合性" />
+    <meta name="Author" content="">
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="styles/<%= data.filename%>.css">
+    <% /*jquery.js*/ %>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="js/bundle.js"></script>
+    <script src="vendor/jquery.nicescroll.min.js"></script>
+</head>
+
+

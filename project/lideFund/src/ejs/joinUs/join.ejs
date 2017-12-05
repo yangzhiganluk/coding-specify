@@ -1,0 +1,64 @@
+<div class="join">
+    <div class="toptitle">
+        <img src="images/join/01.png" alt="领导团队">
+    </div>
+    <div class="posi">
+        <div class="general-posi clearfix">
+            <% for(var i=0; i<data.joinUsData.length; i++){ %>
+            <% if(i==0){ %>
+            <div class="single-box fl active">
+            <% }else{ %>
+            <div class="single-box fl">
+            <% } %>
+                <% if(i==0){ %>
+                <p class="posiname radius-left">
+                <% }else if(i==data.joinUsData.length-1){ %>
+                <p class="posiname radius-right">
+                <% }else{ %>
+                <p class="posiname">
+                <% } %>
+                    <%= data.joinUsData[i].name %></p>
+                <div class="line"></div>
+            </div>
+            <% } %>
+        </div>
+        <div class="posi-detail">
+            <ul>
+                <% for(var t=0; t<data.joinUsData.length; t++){ %>
+                    <% if(t==0){%>
+                    <li class="active">
+                    <% }else{ %>
+                    <li>
+                    <% } %>
+                        <div class="dutybox content">
+                            <h5>岗位职责：</h5>
+                            <% for(var j=0; j<data.joinUsData[t].duty.length; j++){ %>
+                            <p class="duty"><%= j+1 %>、<%= data.joinUsData[t].duty[j] %></p>
+                            <% } %>
+                        </div>
+                        <div class="askbox content">
+                            <h5>任职要求：</h5>
+                            <% for(var k=0; k<data.joinUsData[t].duty.length; k++){ %>
+                            <p class="ask"><%= k+1 %>、<%= data.joinUsData[t].duty[k] %></p>
+                            <% } %>
+                        </div>
+                        <div class="advbox content">
+                            <h5>岗位优势：</h5>
+                            <% for(var n=0; n<data.joinUsData[t].duty.length; n++){ %>
+                            <p class="ask"><%= n+1 %>、<%= data.joinUsData[t].duty[n] %></p>
+                            <% } %>
+                        </div>
+                        <div class="addr content">
+                            <h5>工作地点：<span><%= data.joinUsData[t].addr %></span></h5>
+                        </div>
+                        <div class="posibtn" style="text-align: center">
+                            <a href="<%= data.joinUsData[t].target %>">
+                                <img src="images/join/btn.png" alt="立即投递">
+                            </a>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

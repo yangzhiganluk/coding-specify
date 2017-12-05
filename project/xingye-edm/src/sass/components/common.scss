@@ -1,0 +1,11 @@
+$backgroundColor: #ededed;
+$scale: 1;
+html {
+  font-size: 16px;
+}
+.wrapper {
+  margin: 0 auto;
+  background-color: $backgroundColor;
+  width: 960px * $scale;
+  min-width: 320px;
+}

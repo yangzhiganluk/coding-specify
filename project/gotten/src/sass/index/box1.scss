@@ -1,0 +1,12 @@
+.box1 {
+  .content-box {
+    P {
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

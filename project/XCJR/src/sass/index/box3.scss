@@ -1,0 +1,31 @@
+.box3 {
+  padding-bottom: 31px;
+  font-size: 0;
+  background-color: #f2f2f2;
+  .his-list {
+    width: 74px;
+    margin: 0 auto;
+    &.left {
+      img {
+        float: right;
+      }
+    }
+    &.right {
+      img {
+        float: left;
+      }
+    }
+    &.justify {
+      img {
+        position: relative;
+        right: 166px;
+      }
+    }
+  }
+  .line {
+    margin: 0 auto;
+    width: 3px;
+    height: 22px;
+    background-color: #5b9ff7;
+  }
+}

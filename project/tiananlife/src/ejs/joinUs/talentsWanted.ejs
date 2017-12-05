@@ -1,0 +1,51 @@
+<div class="talentsWanted">
+    <div class="box-title">
+        <img src="images/index/aboutus.png" alt="关于我们">
+    </div>
+    <div class="box-content">
+        <div class="info">
+            <p><%= data.joinUsData.title %></p>
+        </div>
+        <ul class="job-box">
+            <% for(var i=0; i<data.joinUsData.jobData.length; i++){ %>
+                <li class="job-item">
+                    <div class="row-01">
+                        <img src="images/joinus/<%= data.joinUsData.jobData[i].src %>" alt="职位名">
+                    </div>
+                    <div class="row-02 clearfix">
+                        <div class="col fl">
+                            <h3>岗位职责:</h3>
+                        </div>
+                        <div class="duty fl">
+                            <ol>
+                                <% for(var j=0; j<data.joinUsData.jobData[i].duty.length; j++){ %>
+                                    <li class="detail"><%= data.joinUsData.jobData[i].duty[j]%></li>
+                                <% } %>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row-03 clearfix">
+                        <div class="col fl">
+                            <h3>岗位要求:</h3>
+                        </div>
+                        <div class="ask fl">
+                            <ol>
+                                <% for(var k=0; k<data.joinUsData.jobData[i].ask.length; k++){ %>
+                                <li class="detail"><%= data.joinUsData.jobData[i].ask[k]%></li>
+                                <% } %>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row-04">
+                        <img class="job-bg" src="images/joinus/<%= data.joinUsData.jobData[i].bg %>" alt="背景">
+                    </div>
+                    <div class="btn">
+                        <a href="<%= data.joinUsData.jobData[i].href %>" class="btn-join">
+                            <img src="images/joinus/04.png" alt="加入我们">
+                        </a>
+                    </div>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

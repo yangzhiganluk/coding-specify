@@ -1,0 +1,14 @@
+<div class="pros">
+    <div class="wrapper">
+        <div class="box-title" align="center">
+            <img src="images/pro/title.png" alt="安联产品">
+        </div>
+        <div class="box-content clearfix">
+            <ul>
+                <% for(var i=0; i<data.proData.length; i++){ %>
+                <li class="img-box fl"><img src="images/pro/<%= data.proData[i] %>" alt="产品"></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

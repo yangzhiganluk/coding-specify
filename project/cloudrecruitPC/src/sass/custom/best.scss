@@ -1,0 +1,28 @@
+.best {
+  .panel {
+    position: relative;
+    background: url(../images/service/panel.jpg) no-repeat center center;
+    width:100%;
+    height:397px;
+    background-size: cover;
+  }
+  .detail-service {
+    .special {
+      width: $inner-width;
+      margin: 100px auto;
+      .txt-box {
+        width: 520px;
+        .title {
+          padding-bottom: 15px;
+          margin-bottom: 35px;
+          font-size: 40px;
+          color: #333;
+          border-bottom: 1px solid #666;
+        }
+        .para {
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

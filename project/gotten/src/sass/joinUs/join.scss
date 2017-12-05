@@ -1,0 +1,55 @@
+.join {
+  .posi {
+    .general-posi {
+      width: 570px;
+      margin: 0 auto;
+        .posiname {
+          margin-left: 6px;
+          width: 137px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          color: #fff;
+          background-color: #c6c6c6;
+          border-radius: 10px;
+          cursor: pointer;
+          &.active {
+            background-color: #f3b23c;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+    }
+    .posi-detail {
+      margin-top: 16px;
+      margin-bottom: 50px;
+      padding: 24px 26px;
+      background-color: #f1f1f1;
+      li {
+        &.active {
+          display: block
+        }
+        display: none;
+        line-height: 30px;
+          h2 {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          h3 {
+            font-weight: bold;
+          }
+        .others {
+
+        }
+        .askbox {
+          margin-top: 25px;
+        }
+        .posibtn {
+          padding-top: 100px;
+        }
+      }
+
+    }
+  }
+}

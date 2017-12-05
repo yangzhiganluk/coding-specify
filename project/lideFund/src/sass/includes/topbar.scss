@@ -1,0 +1,30 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    width: $content-width;
+    .fr {
+      margin-right: 14px;
+      ul li {
+          float: left;
+          margin: 26px 0 0 45px;
+          padding-bottom: 19px;
+          border-bottom: 2px solid transparent;
+          line-height: 18px;
+          text-align: center;
+          font-size: 18px;
+          a {
+            color: #454545;
+            font-weight: 700;
+          }
+          &.active{
+            border-bottom-color: #e55217;
+            a {
+              color: #e55217;
+            }
+          }
+      }
+    }
+  }
+}

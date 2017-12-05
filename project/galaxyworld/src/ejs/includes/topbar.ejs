@@ -1,0 +1,38 @@
+<div class="topbar">
+    <div class="topbar-inner clearfix">
+        <div class="bubble-circle justify-center">
+            <div class="bubble bubble-left">
+                <img src="images/index/bubble-left.png" alt="bubble">
+            </div>
+            <div class="bubble bubble-right">
+                <img src="images/index/bubble-right.png" alt="bubble">
+            </div>
+            <div class="nav">
+                <ul>
+                    <% for(var i=0; i<data.topBarData.length;i++){%>
+                    <% /*传入标签中加入active类*/%>
+                    <% if(data.topBarData[i].key == data.filename ){ %>
+                    <li class="active">
+                        <% }else{ %>
+                    <li>
+                        <% } %>
+                        <a href="<%= data.topBarData[i].href %>" class="clearfix">
+                            <i class="nav-icon fl"></i>
+                            <div class="nav-txt fl">
+                                <p class="name"><%= data.topBarData[i].name  %></p>
+                                <p class="en"><%= data.topBarData[i].en  %></p>
+                            </div>
+                        </a>
+                        <% /*最后一个li标签添加</li>兼容ie*/%>
+                        <% if(i===data.topBarData.length-1){%>
+                    </li>
+                    <% } %>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="logo fl">
+            <a href="javascript:void(0)"><img src="images/logo.png" alt="logo"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.box1 {
+  margin: 0 auto;
+  .box-title {
+    margin: 66px auto 43px;
+  }
+  .box-content {
+    .txt-box {
+      font-size: 14px;
+      color: #666;
+      line-height: 28px;
+      width: 520px;
+    }
+    .img-box {
+      margin: 20px 0 0 60px;
+    }
+  }
+}

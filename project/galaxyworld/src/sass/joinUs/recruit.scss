@@ -1,0 +1,56 @@
+.recruit {
+  .box-content {
+    position: relative;
+    .swiper-container {
+      width: 676px;
+      .job-box {
+        line-height: 20px;
+        h3 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        h4 {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+        .img-box {
+          margin-top: 28px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .swiper-button-prev, .swiper-button-next {
+      width: 35px;
+      height: 35px;
+      margin-top: -18px;
+      -webkit-background-size: 35px 35px;
+      background-size: 35px 35px;
+    }
+    .swiper-button-prev {
+      left: 62px;
+      background-image: url(../images/joinus/arrow-left.png);
+    }
+    .swiper-button-next {
+      right: 62px;
+      background-image: url(../images/joinus/arrow-right.png);
+    }
+    .swiper-pagination {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+      background: #fff;
+      opacity: .5;
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: #35c0f3;
+    }
+  }
+}

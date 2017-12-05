@@ -1,0 +1,35 @@
+.thinking {
+  .box-content {
+    .devlist {
+      .col-1 {
+        width: 134px;
+        height: 40px;
+        h3 {
+          font-size: 36px;
+          color: #28559a;
+        }
+      }
+      .col-2 {
+        position: relative;
+        padding-left: 45px;
+        max-width: 750px;
+        min-height: 105px;
+        border-left: 2px solid #bebebe;
+        .lc-icon {
+          position: absolute;
+          top: 4px;
+          left: -16px;
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url(../images/devHistory/circle.png);
+        }
+        p {
+          font-size: 16px;
+          color: #454545;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

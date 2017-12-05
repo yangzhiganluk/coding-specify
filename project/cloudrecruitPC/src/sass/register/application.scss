@@ -1,0 +1,161 @@
+.application {
+  position: relative;
+  top: -400px;
+  margin-bottom: -300px;
+  .modal-form {
+    width: 813px;
+    margin: 0 auto;
+    color: #666;
+    label {
+      font-weight: 500;
+    }
+    .modal-header {
+      border-bottom: none;
+      font-size: 36px;
+      color: #333;
+      background-color: #f2f2f2;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    .modal-body {
+      .modal-doc {
+        width: 652px;
+        margin: 0 auto 15px;
+        line-height: 30px;
+      }
+      .form-control[readonly],
+      .form-control {
+        background-color: transparent;
+      }
+      .form-group {
+        position: relative;
+        margin-bottom: 27px;
+        .hint {
+          position: absolute;
+          left: 0;
+          width: 193px;
+          text-align: right;
+          line-height: 40px;
+          .hint-icon {
+            color: #e86262;
+          }
+          .hint-txt {
+            font-size: 20px;
+          }
+        }
+        .entryIn {
+          position: relative;
+          margin-left: 221px;
+          width: 448px;
+          input {
+            height: 40px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+          }
+          span.dropdown {
+            height: 40px;
+            padding: 0 12px;
+            line-height: 40px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            color: #aaa;
+          }
+          .input-group-btn {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            .btn {
+              height: 40px;
+              width: 54px;
+              background-color: #fff;
+              border: none;
+              border-left: 1px solid #d2d2d2;
+              span {
+                color: #ccc;
+              }
+            }
+            &.company-size{
+              .btn {
+                border: 1px solid #d2d2d2;
+              }
+            }
+            .dropdown-menu {
+              width: 448px;
+              left: -393px;
+              li {
+                //background-color: #e4e4e4;
+                height: 40px;
+                a {
+                  padding: 0 20px;
+                  height: 100%;
+                  line-height: 40px;
+                  color: #a3a3a3;
+                }
+                &.divider {
+                  margin: 0 auto;
+                  height: 1px;
+                }
+              }
+            }
+          }
+          textarea {
+            height: 120px;
+            max-width: 448px;
+            max-height: 120px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border-top: none;
+      text-align: center;
+      .btn-primary {
+        background-color: #41a2d9;
+        border-color: #41a2d9;
+        width: 207px;
+        height: 57px;
+      }
+    }
+  }
+}
+#size,
+#province {
+  width: 394px;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.region-picker {
+  position: relative;
+  width: 448px;
+  height: 40px;
+}
+.city-picker-input {
+  top: 0;
+  left: 0;
+  opacity: 1 !important;
+}
+.city-picker-span {
+  .title {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  .arrow {
+    .btn {
+      height: 40px;
+      width: 54px;
+      background-color: #fff;
+      border: 1px solid #d2d2d2;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      span {
+        color: #ccc;
+      }
+    }
+  }
+}

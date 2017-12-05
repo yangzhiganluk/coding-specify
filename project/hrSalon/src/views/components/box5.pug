@@ -1,0 +1,24 @@
+//Created by juanl on 2017/8/18.
+.box5
+    .title-unit
+        img(src="images/title.png")
+        | 分享会
+        span.inline-block .
+        | #{locals.box5.title}
+    .box-content
+        .db-line
+        .theme.table
+            .table-cell.cross-line
+                img(src="images/theme.jpg")
+            .table-cell.title
+                | 2016-2017年金融业薪酬报告分享会
+        ul
+            each item in locals.box5.txt
+                li.table
+                    .table-cell.cross-line
+                        img(src="images/calendar.jpg")
+                    .table-cell.time
+                        | #{item.time}
+                    .table-cell.txt
+                        each txt in item.txt
+                            p #{txt}

@@ -1,0 +1,55 @@
+<div class="jobInfo">
+    <div class="inner-title">
+        <span class="line"><b></b></span>
+        <span class="cn-title">加入我们</span>
+        <span class="en-title">join us</span>
+    </div>
+    <div class="joblist">
+        <ul>
+            <% for(var t=0; t<data.jobInfoData.length; t++){ %>
+                <% if(t===1){ %>
+                    <li class="jobitem active"><%= data.jobInfoData[t].name%></li>
+                <% }else{ %>
+                    <li class="jobitem"><%= data.jobInfoData[t].name%></li>
+                <% } %>
+            <% } %>
+        </ul>
+        <% for(var i=0; i<data.jobInfoData.length; i++){ %>
+        <% if(i===1){ %>
+        <div class="listitem active">
+        <% }else{ %>
+        <div class="listitem">
+        <% }%>
+            <h4><%= data.jobInfoData[i].name %></h4>
+            <h5>岗位职责：</h5>
+            <ul>
+            <% for(var j=0; j<data.jobInfoData[i].duty.length; j++){ %>
+            <li class="duty"><%= data.jobInfoData[i].duty[j] %></li>
+            <% } %>
+            </ul>
+            <h5>岗位要求：</h5>
+            <ul>
+            <% for(var k=0; k<data.jobInfoData[i].ask.length; k++){ %>
+            <li class="ask"><%= data.jobInfoData[i].ask[k] %></li>
+            <% } %>
+            </ul>
+            <div class="deliver clearfix">
+                <div class="fl head_portrait">
+                    <img src="<%= data.jobInfoData[i].img %>" alt="头像">
+                </div>
+                <div class="fl remarks">
+                    <h4><%= data.jobInfoData[i].name %></h4>
+                    <p class="addr"><span>工作地点：</span><%= data.jobInfoData[i].addr %></p>
+                    <p class="part"><span>全/兼职：</span><%= data.jobInfoData[i].part %></p>
+                    <p class="salary"><span>月&nbsp;&nbsp;薪：</span><%= data.jobInfoData[i].salary %></p>
+                    <p class="pubtime"><span>发布时间：</span><%= data.jobInfoData[i].pubtime %></p>
+                    <div class="btn-deliver">
+                        <a href="<%=data.jobInfoData[i].target %>" target="_blank">投递简历</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+

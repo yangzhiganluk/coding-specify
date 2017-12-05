@@ -1,0 +1,19 @@
+<div class="box3">
+    <div class="toptitle">
+        <img src="images/authority/01.png" alt="核心团队">
+    </div>
+    <div class="core-team clearfix">
+        <div id="column1"></div>
+        <ul class="remark">
+            <% for(var i=0; i<data.coAuthority.box3.pie1.length; i++){ %>
+            <li><i class="item" style="background: <%= data.coAuthority.box3.pie1[i].bc %>"></i><%= data.coAuthority.box3.pie1[i].name %>&nbsp;<%= data.coAuthority.box3.pie1[i].val %></li>
+            <% } %>
+        </ul>
+        <div id="column2"></div>
+        <ul class="remark">
+            <% for(var j=0; j<data.coAuthority.box3.pie2.length; j++){ %>
+            <li><i class="item" style="background: <%= data.coAuthority.box3.pie2[j].bc %>"></i><%= data.coAuthority.box3.pie2[j].name %>&nbsp;<%= data.coAuthority.box3.pie2[j].val %></li>
+            <% } %>
+        </ul>
+    </div>
+</div>

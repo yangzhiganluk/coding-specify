@@ -1,0 +1,16 @@
+<div class="teamStyle">
+    <div class="toptitle">
+        <img src="images/team/01.png" alt="团队风采">
+    </div>
+    <div class="picwall">
+        <ul>
+            <% for(var i=0; i<data.teamData.length; i++){ %>
+                <li>
+                    <% for( var j=0; j<data.teamData[i].row.src.length; j++){%>
+                    <img src="images/team/<%= data.teamData[i].row.src[j]%>" alt="照片墙">
+                    <% } %>
+                </li>
+           <% } %>
+        </ul>
+    </div>
+</div>

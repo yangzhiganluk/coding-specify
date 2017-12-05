@@ -1,0 +1,31 @@
+.title-unit {
+  margin: 60px 0 30px;
+  color: $theme-color;
+  font-weight: bold;
+  font-size: 28px;
+  img {
+    vertical-align: sub;
+    margin-right: 8px;
+  }
+  .inline-block {
+    display: inline-block;
+    vertical-align: super;
+    margin: 0 10px;
+  }
+}
+.box-content {
+  padding-left: 14px;
+  color: #666;
+  font-size: 16px;
+  line-height: 30px;
+}
+.wrapper {
+  width: $wrapper-width;
+  margin: 0 auto;
+  img {
+    display: inline-block;
+  }
+}
+body {
+  background-color: #fff;
+}

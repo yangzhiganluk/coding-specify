@@ -1,0 +1,30 @@
+<div class="devCourse">
+    <div class="inner-title">
+        <span class="line"><b></b></span>
+        <span class="cn-title">公司简介</span>
+        <span class="en-title">development history</span>
+    </div>
+    <div class="intro-detail">
+        <div class="timebox">
+            <div class="column">
+                <img src="images/iconair.png" alt="飞机" class="iconair">
+                <div class="timeline"></div>
+                <p class="bottomline"></p>
+            </div>
+            <% for(var i=0; i<data.devCourseData.length; i++){ %>
+            <div class="timeunit">
+                <div class="timeyear">
+                    <h4><%= data.devCourseData[i].timeyear %></h4>
+                </div>
+                <% for(var j=0; j<data.devCourseData[i].items.length; j++){ %>
+                <div class="items">
+                    <p class="timenum"><%= data.devCourseData[i].items[j].timenum %></p>
+                    <i class="iconcircle"></i>
+                    <p class="achieve"><%= data.devCourseData[i].items[j].achieve %></p>
+                </div>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

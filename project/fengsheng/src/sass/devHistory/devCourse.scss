@@ -1,0 +1,66 @@
+.devCourse {
+  .intro-detail {
+    margin-top: 6px;
+    .timebox{
+      position: relative;
+      padding-top: 45px;
+      .column {
+        position: absolute;
+        z-index: -1;
+        top: 5px;
+        left: 128px;
+        .iconair {
+          margin-left: -23px;
+        }
+        .timeline {
+          width: 1px;
+          height: 470px;
+          background-color: #7f8081;
+          opacity: .5;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        }
+        .bottomline {
+          margin-left: -11px;
+          width: 22px;
+          height: 4px;
+          background-color: #b07907;
+        }
+      }
+      .timeunit {
+        .timeyear {
+          h4 {
+            margin-bottom: 20px;
+            padding-top: 20px;
+            font-size: 24px;
+            color: #b07907;
+            font-family: 'PingFangSC Bold',"Microsoft YaHei";
+          }
+        }
+        .items {
+          display: table;
+          cursor: pointer;
+          margin-bottom: 13px;
+          p {
+            display: table-cell;
+            font-size: 18px;
+            color: #666;
+            font-family: 'PingFangSC Regular',"Microsoft YaHei";
+            &.timenum {
+              width: 116px;
+            }
+            &.achieve {
+              padding-left: 20px;
+            }
+          }
+          i {
+            display: table-cell;
+            width: 24px;
+            height: 24px;
+            background: url(../images/circlecenter.png) no-repeat center center;
+          }
+        }
+      }
+    }
+  }
+}

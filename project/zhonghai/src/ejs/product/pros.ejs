@@ -1,0 +1,12 @@
+<div class="pros">
+    <div class="box-title" align="center">
+        <img src="images/pro/t01.jpg" alt="业务模块">
+    </div>
+    <div class="box-content">
+        <% for(var i=0; i<data.proData.length; i++){ %>
+        <div class="img-box">
+            <img src="images/pro/<%= data.proData[i] %>" alt="业务模块">
+        </div>
+        <% } %>
+    </div>
+</div>

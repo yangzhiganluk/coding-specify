@@ -1,0 +1,40 @@
+.box7 {
+  margin: 80px 0;
+  height: 208px;
+  background-color: #33879f;
+  padding: 0 30px;
+  .table-cell {
+    vertical-align: middle;
+    height: 208px;
+    &:first-child {
+      padding-right: 20px;
+    }
+    &:first-child+.table-cell {
+      padding: 0 20px;
+    }
+    &:first-child+.table-cell+.table-cell {
+      vertical-align: baseline;
+    }
+    .up {
+      padding: 35px 0 8px;
+      color: #fff;
+      font-size: 20px;
+    }
+    .down {
+      margin-bottom:30px;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  li {
+    margin-bottom: 10px;
+    img {
+      vertical-align: middle;
+    }
+    span {
+      margin-left: 8px;
+      color: #ffe493;
+      font-size: 12px;
+    }
+  }
+}

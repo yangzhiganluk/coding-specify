@@ -1,0 +1,5 @@
+$breakpoints: (
+  'xs': 'only screen and ( max-width: 375px)',
+  'sm': 'only screen and ( max-width: 414px)',
+  'md': 'only screen and ( max-width: 768px)',
+) !default;

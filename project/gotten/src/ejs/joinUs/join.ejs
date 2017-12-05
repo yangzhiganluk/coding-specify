@@ -1,0 +1,51 @@
+<div class="join">
+    <div class="top-title">
+        <img src="images/join/01.png" alt="领导团队">
+    </div>
+    <div class="posi">
+        <div class="general-posi clearfix">
+            <% for(var i=0; i<data.joinUsData.length; i++){ %>
+            <% if(i==0){%>
+            <p class="posiname fl active">
+                <% }else{ %>
+            <p class="posiname fl">
+                <% } %>
+                <%= data.joinUsData[i].name %>
+            </p>
+            <% } %>
+        </div>
+        <div class="posi-detail">
+            <ul>
+                <% for(var t=0; t<data.joinUsData.length; t++){ %>
+                    <% if(t==0){%>
+                    <li class="active">
+                    <% }else{ %>
+                    <li>
+                    <% } %>
+                    <h2><%= data.joinUsData[t].name %></h2>
+                    <div class="others">
+                        <span><%= data.joinUsData[t].addr %></span><b>|</b><span><%= data.joinUsData[t].sala %></span><b>|</b><span><%= data.joinUsData[t].edu %></span><b>|</b><span><%= data.joinUsData[t].worktime %></span>
+                    </div>
+                        <div class="dutybox">
+                            <h3>岗位职责：</h3>
+                            <% for(var j=0; j<data.joinUsData[t].duty.length; j++){ %>
+                            <p class="duty"><%= j+1 %>、<%= data.joinUsData[t].duty[j] %></p>
+                            <% } %>
+                        </div>
+                        <div class="askbox">
+                            <h3>岗位要求：</h3>
+                            <% for(var k=0; k<data.joinUsData[t].duty.length; k++){ %>
+                            <p class="ask"><%= k+1 %>、<%= data.joinUsData[t].duty[k] %></p>
+                            <% } %>
+                        </div>
+                        <div class="posibtn" style="text-align: center">
+                            <a href="<%= data.joinUsData[t].target %>">
+                                <img src="images/join/go.png" alt="立即投递">
+                            </a>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

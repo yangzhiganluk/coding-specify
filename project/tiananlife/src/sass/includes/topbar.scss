@@ -1,0 +1,52 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    width: 1100px;
+    height: 88px;
+    .logo {
+      padding-left: 30px;
+      padding-top: 18px;
+      padding-bottom: 12px;
+    }
+    .nav {
+      margin-right: 5px;
+      ul li {
+        position: relative;
+        float: left;
+        padding-top: 49px;
+        padding-bottom: 7px;
+        width: 132px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        a {
+          display: block;
+          color: #0f1100;
+          border-left: 1px solid #acacac;
+        }
+        &:first-child {
+         a {
+           border-left-color: transparent;
+         }
+        }
+        i {
+          display: none;
+          padding-top: 10px;
+          background: url(../images/arrowdown.png) center center no-repeat;
+          width: 14px;
+          height: 7px;
+          margin: 0 auto;
+        }
+        &.active{
+          a {
+            color: #f08200;
+          }
+          i {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

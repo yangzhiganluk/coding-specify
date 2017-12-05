@@ -1,0 +1,78 @@
+.topbar {
+  .topbar-inner {
+    position: relative;
+    margin: 0 auto;
+    .logo {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .bubble-circle {
+    width: 911px;
+    height: 768px;
+    //border: 1px solid #fff;
+    background: url(../images/index/circle.png) no-repeat;
+  }
+  .bubble {
+    position: absolute;
+    &.bubble-left {
+      top: 150px;
+      left: -40px;
+    }
+    &.bubble-right {
+      bottom: 65px;
+      right: -40px;
+    }
+  }
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 45px;
+    ul li {
+      position: absolute;
+      width: 110px;
+      line-height: 50px;
+      a {
+        display: block;
+        color: #5d95bc;
+        .nav-icon {
+          margin-top: 2px;
+          width: 14px;
+          height: 14px;
+          display: block;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          background-color: #5d95bc;
+          border: 5px solid #5d95bc;
+        }
+        .nav-txt {
+          p {
+            line-height: 16px;
+          }
+        }
+      }
+      &.active {
+        a {
+          color: #35c0f3;
+          .nav-icon {
+            background-color: #8be8ff;
+            border-color: #35c0f3;
+          }
+        }
+      }
+      &:first-child {
+         top: 0;
+         right: -24px;
+       }
+      &:first-child+li {
+        top: 60px;
+        right: -68px;
+      }
+      &:first-child+li+li {
+        top: 120px;
+        right: -100px;
+      }
+    }
+  }
+}

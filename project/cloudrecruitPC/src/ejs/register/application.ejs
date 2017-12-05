@@ -1,0 +1,105 @@
+<div class="application">
+    <!-- Modal -->
+    <div class="modal-form" >
+        <form role="form" id="register-form">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <p class="modal-title">申请演示</p>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-doc" align="center">
+                        为确保能及时联系到您，请填写您的真实信息，审核通过后，我们将会在24小时内联系您，目前51招聘云系统演示只针对企业用户开放。
+                    </p>
+
+                        <% for(var i=0; i<data.registData.length; i++){%>
+                        <div class="form-group">
+                            <% if(i!=data.registData.length-1){ %>
+                            <div class="input-group">
+
+                                <% if(data.registData[i].key == 'size'){ %>
+
+                                    <label for="<%=data.registData[i].id %>" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt"><%= data.registData[i].value %></span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=<%=data.registData[i].type %> id="<%=data.registData[i].id %>" readonly class="form-control" placeholder="<%= data.registData[i].placeholder %>">
+                                        <!--<span id="<%=data.registData[i].id %>"  class="form-control dropdown"><%= data.registData[i].placeholder %></span>-->
+                                        <div class="input-group-btn company-size">
+                                            <button type="button" id="company-size" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="company-size">
+                                                <% for( var j=0; j<data.size.length; j++){ %>
+                                                    <li><a href="javascript:void(0)"><%= data.size[j] %></a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                <% } %>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+
+                                    </div>
+
+                                <% }else if( data.registData[i].key == 'province'){ %>
+
+                                    <label for="<%=data.registData[i].id %>" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt"><%= data.registData[i].value %></span>
+                                    </label>
+                                    <div class="entryIn">
+
+                                        <div class="region-picker">
+                                            <input type=<%=data.registData[i].type %> id="<%=data.registData[i].id %>" readonly class="form-control"  data-toggle="city-picker" placeholder="<%= data.registData[i].placeholder %>">
+                                        </div>
+
+                                    </div>
+
+                                <% }else{ %>
+
+                                    <label for="<%=data.registData[i].id %>" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt"><%= data.registData[i].value %></span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=<%=data.registData[i].type %> id="<%=data.registData[i].id %>" class="form-control" placeholder="<%= data.registData[i].placeholder %>">
+                                    </div>
+
+                                <% } %>
+                            </div>
+
+                            <% }else{ %>
+                                <label for="message-text" class="control-label hint">
+                                    <span class="hint-txt"><%= data.registData[i].value %></span>
+                                </label>
+                                <div class="entryIn">
+                                    <textarea class="form-control"
+                                              id="message-text"
+                                              placeholder="<%= data.registData[i].placeholder %>"
+                                              row="4"
+                                              type=<%=data.registData[i].type %>></textarea>
+                                </div>
+                            <% } %>
+                        </div>
+                        <% } %>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button type="button"
+                                class="btn btn-primary btn-lg"
+                                data-toggle="popover"
+                                id="submit">提交申请</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="dialog-container">
+    <!--<div class="mask"></div>-->
+    <div class="dialog">
+        <div class="dialog_bd">
+        </div>
+        <div class="dialog_ft">
+            <a href="javascript:void(0)" class="dialog-btn" onclick="bundle.closeDialog()">我知道了</a>
+        </div>
+    </div>
+</div>
+

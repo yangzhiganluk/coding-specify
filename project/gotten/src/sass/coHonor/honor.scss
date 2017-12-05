@@ -1,0 +1,26 @@
+.honor {
+  margin-bottom: 50px;
+  .content-box {
+    padding-left: 90px;
+    li {
+      text-align: center;
+      &:first-child {
+        margin-right: 45px;
+        max-width: 197px;
+      }
+      .img-box {
+        height: 266px;
+        width: 100%;
+        display: table;
+        div:first-child {
+          display: table-cell;
+          text-align: center;
+          vertical-align: bottom;
+        }
+      }
+      .txt-box {
+        padding-top: 12px;
+      }
+    }
+  }
+}

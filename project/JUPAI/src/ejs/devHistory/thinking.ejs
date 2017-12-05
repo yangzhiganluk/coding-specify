@@ -1,0 +1,24 @@
+<div class="thinking">
+    <div class="box-title">
+        <span class="title-01">发展历程</span>
+        <b>|</b>
+        <span class="title-02">history</span>
+    </div>
+    <div class="box-content clearfix">
+        <ul>
+            <% for(var i=0; i<data.devHistoryData.length; i++){ %>
+            <li class="devlist clearfix">
+                <div class="col-1 fl">
+                    <h3><%= data.devHistoryData[i].year %></h3>
+                </div>
+                <div class="col-2 fl">
+                    <i class="lc-icon"></i>
+                    <% for(var j=0; j<data.devHistoryData[i].deed.length; j++){ %>
+                    <p><%= data.devHistoryData[i].deed[j] %></p>
+                    <% } %>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

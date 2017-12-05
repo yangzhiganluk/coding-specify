@@ -1,0 +1,31 @@
+.box3 {
+  .pic-join {
+    position: relative;
+    .btn-join {
+      position: absolute;
+      display: inline-block;
+      width: 176px;
+      height: 48px;
+      //background-color:red;
+      top: 277px;
+      left: 595px;
+    }
+  }
+  .feature {
+    margin: 72px auto;
+    text-align: center;
+    font-size: 0;
+    img {
+      margin-left: 62px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.footer {
+  .bg-pic {
+    height: 530px !important;
+    background-image: url(../images/bg.png) !important;
+  }
+}

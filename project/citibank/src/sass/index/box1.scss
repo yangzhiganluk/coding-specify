@@ -1,0 +1,15 @@
+.box1 {
+
+  .box-content {
+    max-width: 688px;
+    p {
+      font-size: 14px;
+      line-height: 30px;
+      color: #333;
+      &:first-child {
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

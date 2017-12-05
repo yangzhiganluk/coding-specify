@@ -1,0 +1,23 @@
+<div class="socialHornor">
+    <div class="inner-title">
+            <span class="line"><b></b></span>
+            <span class="cn-title">社会荣誉</span>
+            <span class="en-title">Social honor</span>
+    </div>
+        <ul>
+            <% for(var j=0; j<data.socialHonorData.length; j++){ %>
+            <li class="clearfix">
+                <div class="fl">
+                    <img src="<%= data.socialHonorData[j].src %>" alt="奖">
+                </div>
+                <div class="remark fl">
+                    <h3><%= data.socialHonorData[j].name %></h3>
+                    <h5><%= data.socialHonorData[j].vice %></h5>
+                    <p><%= data.socialHonorData[j].info %></p>
+                </div>
+                <% if(j===data.socialHonorData.length-1){ %>
+            </li>
+            <% } %>
+            <% } %>
+        </ul>
+</div>

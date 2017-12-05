@@ -1,0 +1,44 @@
+.box3 {
+  .box-title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center
+  }
+  .box-content {
+    margin-bottom: 150px;
+    position: relative;
+    .swiper-button-prev {
+      left: 0;
+      background-image: url(../images/index/arrowleft.png);
+    }
+    .swiper-button-next {
+      right: 0;
+      background-image: url(../images/index/arrowright.png);
+    }
+    .swiper-container {
+      width: 830px;
+      margin: 0 auto;
+      .loop-box {
+        .pic-txt {
+          margin-left: 26px;
+          max-width: 550px;
+          font-family: "PingFangSC Regular";
+          h3 {
+            padding: 25px 0 10px 0;
+            font-size: 22px;
+            color: #035c97;
+            line-height: 24px;
+          }
+          p {
+            font-size: 16px;
+            color: #888888;
+            line-height: 26px;
+          }
+          .btn-box {
+            margin-top: 26px;
+          }
+        }
+      }
+    }
+  }
+}

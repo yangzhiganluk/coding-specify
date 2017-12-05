@@ -1,0 +1,40 @@
+.leader {
+  .leader-box {
+    .leader-row {
+      margin-bottom: 28px;
+      .leader-cell {
+        box-sizing: border-box;
+        width: 320px;
+        padding: 0 22px;
+        text-align: center;
+        &.leader-mid {
+          border-left: 1px solid #e3e3e3;
+          border-right: 1px solid #e3e3e3;
+        }
+        .img-box {
+          position: relative;
+          left: 38px;
+        }
+        p {
+          line-height: 24px;
+        }
+        .name {
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .posi {
+          font-weight: bold;
+        }
+        .edu {
+          margin-bottom: 24px;
+        }
+        .info-box {
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

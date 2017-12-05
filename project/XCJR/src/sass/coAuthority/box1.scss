@@ -1,0 +1,18 @@
+.box1 {
+  padding: 0 28px 50px 28px;
+  .co-01 {
+      position: relative;
+      .sign {
+        position: absolute;
+        left: 127px;
+        top: -31px;
+        z-index: -1;
+      }
+    .character {
+      position: absolute;
+      right: 0px;
+      bottom: -50px;
+      z-index: -1;
+    }
+  }
+}

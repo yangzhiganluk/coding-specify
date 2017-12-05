@@ -1,0 +1,17 @@
+<div class="business">
+    <div class="box-title" align="center">
+        <img src="images/mien/t01.jpg" alt="业务领域">
+    </div>
+    <div class="box-content">
+        <% for(var i=0; i<data.mienData.length; i++){ %>
+        <div class="domain clearfix">
+            <div class="img-box fl" align="center">
+                <img src="images/mien/<%= data.mienData[i].src %>" alt="业务">
+            </div>
+            <div class="txt-box fl">
+                <p class="txt"><%= data.mienData[i].txt %></p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>

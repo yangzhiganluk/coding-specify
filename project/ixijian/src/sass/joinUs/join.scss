@@ -1,0 +1,105 @@
+.join {
+  border: 1px solid #f2f2f2;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .posilist {
+    margin-top: 62px;
+    padding: 0 38px;
+    .outwrap {
+      &:first-child {
+        margin-right: 40px;
+      }
+      .insidewrap {
+        margin-bottom: 59px;
+        width: 458px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        .jobname {
+          position: relative;
+          top: -20px;
+          p {
+            margin: 0 auto;
+            width: 220px;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            background-color: #7e0204;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            font-size: 24px;
+            color: #fefefe;
+          }
+        }
+        .boxhead {
+          padding-bottom: 24px;
+          border-bottom: 1px solid #ccc;
+          text-align: center;
+          p {
+            font-size: 16px;
+            color: #1d1d1d;
+            font-weight: 500;
+            b {
+              margin: 0 8px;
+              font-weight: normal;
+            }
+          }
+        }
+        .boxbody {
+          padding: 25px;
+          .content {
+            margin-bottom: 5px;
+            h3 {
+              font-weight: 600;
+              font-size: 18px;
+              color: #1d1d1d;
+              line-height: 26px;
+            }
+            p {
+              color: #1d1d1d;
+              line-height: 26px;
+            }
+          }
+        }
+        .postbtn {
+            padding-top: 30px;
+            a {
+              display: block;
+              margin: 0 auto;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              width: 134px;
+              height: 36px;
+              text-align: center;
+              line-height: 36px;
+              color: #fff;
+              font-size: 18px;
+              background-color: #7e0204;
+            }
+        }
+        &:hover,
+        &.active {
+          box-shadow: 0 4px 9px 0 rgba(43,43,49,.1),0 7px 14px 0 rgba(43,43,49,.13);
+          -webkit-box-shadow: 0 4px 9px 0 rgba(43,43,49,.1),0 7px 14px 0 rgba(43,43,49,.13);
+          -moz-box-shadow: 0 4px 9px 0 rgba(43,43,49,.1),0 7px 14px 0 rgba(43,43,49,.13);
+          -o-box-shadow: 0 4px 9px 0 rgba(43,43,49,.1),0 7px 14px 0 rgba(43,43,49,.13);
+          .jobname {
+            p {
+              background-color: #283a4d;
+            }
+          }
+          .postbtn {
+            a {
+              background-color: #283a4d;
+            }
+          }
+        }
+      }
+    }
+  }
+}

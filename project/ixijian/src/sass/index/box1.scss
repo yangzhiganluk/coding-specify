@@ -1,0 +1,14 @@
+.box1 {
+  .coInfo-txt {
+    text-align: center;
+    p {
+      font-size: 18px;
+      color: #1d1d1d;
+      line-height: 30px;
+      word-spacing: 2px;
+      &:first-child {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}

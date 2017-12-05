@@ -1,0 +1,41 @@
+.contact {
+  .contact-info {
+    padding: 80px 35px 80px 0;
+    color: #999;
+    .col-1 {
+      padding-left: 120px;
+      text-align: left;
+      li {
+        position: relative;
+        height: 35px;
+        line-height: 35px;
+        padding-left: 50px;
+        margin-bottom: 32px;
+        .icons {
+          position: absolute;
+          left: 0;
+          width: 50px;
+          height: 100%;
+          img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .col-2 {
+      .txt-box {
+        text-align: left;
+        margin-left: 12px;
+        line-height: 30px;
+        .vol {
+          height: 33px;
+        }
+      }
+    }
+  }
+}

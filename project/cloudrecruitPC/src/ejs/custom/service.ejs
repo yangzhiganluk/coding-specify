@@ -1,0 +1,16 @@
+<div class="service">
+    <p class="title-cn"><%= data.customData.box1.title %></p>
+    <p class="title-en"><%= data.customData.box1.en %></p>
+    <span class="title-rect"></span>
+    <p class="title-info"><%= data.customData.box1.txt %></p>
+    <ul class="list clearfix">
+        <% for(var i=0; i<data.customData.box1.list.length; i++){ %>
+        <li class="fl">
+            <div class="img-box">
+                <img src="images/service/<%= data.customData.box1.list[i].src %>" alt="kpi">
+            </div>
+            <p><%= data.customData.box1.list[i].txt %></p>
+        </li>
+        <% } %>
+    </ul>
+</div>

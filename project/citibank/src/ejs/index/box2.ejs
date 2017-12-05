@@ -1,0 +1,19 @@
+<div class="box2">
+    <div class="box-title">
+        <img src="images/index/t02.png" alt="">
+    </div>
+    <div class="box-content clearfix">
+        <% for(var i=0; i<data.indexData.box2.length; i++){ %>
+            <ul class="fl">
+                <li>
+                    <div class="img-box">
+                        <img src="images/index/<%= data.indexData.box2[i].src %>" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <%= data.indexData.box2[i].txt %>
+                    </div>
+                </li>
+            </ul>
+        <% } %>
+    </div>
+</div>

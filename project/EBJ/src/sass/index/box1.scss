@@ -1,0 +1,22 @@
+.box1 {
+  .box-title {
+    margin-top: 36px;
+  }
+  .box-content {
+    .txt-box {
+      max-width: 570px;
+      p {
+        margin-top: 28px;
+        color: #454545;
+        line-height: 25px;
+        &:first-child {
+          margin-top: 40px;
+        }
+      }
+    }
+    .img-box {
+      width: 334px;
+      height: 250px;
+    }
+  }
+}

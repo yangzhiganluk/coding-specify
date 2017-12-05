@@ -1,0 +1,26 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 14px;
+    width: $content-width;
+    .fr {
+      ul li {
+          float: left;
+          padding: 27px 27px 4px 27px;
+          line-height: 16px;
+          text-align: center;
+          font-size: 16px;
+          a {
+            color: #313862;
+            font-weight: 700;
+          }
+          &.active{
+            a {
+              color: #b0740c;
+            }
+          }
+      }
+    }
+  }
+}

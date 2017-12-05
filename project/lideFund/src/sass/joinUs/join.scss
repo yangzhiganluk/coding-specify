@@ -1,0 +1,74 @@
+.join {
+  .posi {
+    .general-posi {
+      width: 432px;
+      margin: 0 auto;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      .single-box {
+        width: 216px;
+        text-align: center;
+        .posiname {
+          margin-bottom: 6px;
+          height: 45px;
+          cursor: pointer;
+          line-height: 45px;
+          background-color: #9f9f9f;
+          font-family: "Microsoft YaHei";
+          font-size: 24px;
+          font-weight: bold;
+          color: #fff;
+          &.radius-left {
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+          }
+          &.radius-right {
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+        }
+        .line {
+          margin: 0 6px;
+          width: 204px;
+          height: 3px;
+          background-color: transparent;;
+        }
+        &.active {
+          .posiname {
+            background-color: #e55217;
+          }
+          .line {
+            background-color: #e55217;
+          }
+        }
+      }
+    }
+    .posi-detail {
+      li {
+        &.active {
+          display: block
+        }
+        display: none;
+        .content {
+          margin-bottom: 30px;
+          h5 {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 30px;
+          }
+          p {
+            line-height: 30px;
+          }
+        }
+        .addr {
+          span {
+            font-weight: normal;
+            font-size: 16px;
+          }
+        }
+      }
+
+    }
+  }
+}

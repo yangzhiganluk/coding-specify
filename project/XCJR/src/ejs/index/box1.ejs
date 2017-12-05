@@ -1,0 +1,11 @@
+<div class="box1">
+    <div class="toptitle">
+        <img src="images/index/01.png" alt="关于我们">
+    </div>
+    <div class="coInfo-txt">
+        <h2><%= data.indexData.box1.title %></h2>
+        <% for(var i=0;i< data.indexData.box1.txt.length; i++){ %>
+            <p><%=  data.indexData.box1.txt[i] %></p>
+        <% } %>
+    </div>
+</div>

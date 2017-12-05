@@ -1,0 +1,19 @@
+<div class="indResearch">
+    <div class="top-title" >
+        <img src="images/coHonor/01.png" alt="关于我们">
+    </div>
+    <div class="content-box">
+        <ul class="clearfix">
+            <% for(var i=0; i< data.coHonorData.box1.length; i++){ %>
+            <li class="fl">
+                <div class="img-box">
+                    <img src="images/coHonor/<%= data.coHonorData.box1[i].src%>" alt="">
+                </div>
+                <div class="txt-box">
+                    <p><%= data.coHonorData.box1[i].txt%></p>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>果藤金融</title>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta content="果藤金融，票据行业服务专家" name="description" />
+    <meta name="keywords" content="" />
+    <meta name="Author" content="">
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="styles/<%= data.filename %>.css">
+    <% /*jquery.js*/ %>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="js/bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            var scale = $(window).width() / 1366;
+            $('.banner').height(386*scale);
+            $('.banner .pic-bg').height(386*scale);
+            $('.banner .inner-txt').height(386*scale);
+            $('.banner').css({
+                display: 'block'
+            })
+        })
+    </script>
+</head>

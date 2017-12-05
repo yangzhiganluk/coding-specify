@@ -1,0 +1,29 @@
+.joinUs {
+  .envir {
+    margin-top: 15px;
+    position: relative;
+    width: 1040px;
+    height: 303px;
+    .bg-envir {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .column {
+      position: absolute;
+      top: 0;
+      left: 446px;
+      cursor: pointer;
+      .tradown {
+        position: absolute;
+        bottom: 116px;
+        right: 64px;
+        display: block;
+        width: 14px;
+        height: 8px;
+        background: url(../images/tradown.png);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<% include head.ejs %>
+<body>
+    <div class="wrapper">
+        <!--logo和导航-->
+        <% include ../includes/topbar.ejs %>
+    </div>
+    <!--banner-->
+    <% include ../includes/banner.ejs %>
+    <div class="wrapper">
+        <!--发展历程-->
+        <% include devHistory.ejs %>
+        <!--企业领导-->
+        <% include leadership.ejs %>
+    </div>
+    <!--footer-->
+    <% include ../includes/footer.ejs %>
+    <% /*jquery.js*/ %>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
+

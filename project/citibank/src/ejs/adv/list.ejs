@@ -1,0 +1,16 @@
+<div class="list">
+    <div class="box-title" align="center">
+        <img src="images/adv/t01.png" alt="">
+    </div>
+    <div class="box-content">
+        <% for(var i=0; i<data.advData.length; i++){ %>
+        <div class="row-level clearfix">
+            <% for(var j=0; j<data.advData[i].length; j++){ %>
+                <div class="img-box fl">
+                    <img src="images/adv/<%= data.advData[i][j] %>" alt="">
+                </div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="box2">
+    <div class="box-title" align="center">
+        <img src="images/index/t02.jpg" alt="企业文化">
+    </div>
+    <div class="box-content clearfix">
+    <% for(var t=0; t<data.indexData.box2.length; t=t+3){ %>
+        <div class="list-box fl">
+            <ul>
+                <% for(var i=0; i<data.indexData.box2.length/2; i++){ %>
+                <li><img src="images/index/<%= data.indexData.box2[i+t] %>" alt="文化"></li>
+                <% } %>
+            </ul>
+        </div>
+    <% } %>
+    </div>
+</div>

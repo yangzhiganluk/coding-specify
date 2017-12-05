@@ -1,0 +1,25 @@
+<div class="best">
+    <div class="panel"></div>
+    <div class="detail-service">
+        <% for(var i=0; i<data.customData.box2.list.length; i++){ %>
+        <div class="clearfix special">
+            <% if(i%2==0){ %>
+            <div class="fl txt-box">
+                <div class="title" align="left"><%= data.customData.box2.list[i].panelTitle %></div>
+            <% }else{ %>
+            <div class="fr txt-box">
+                <div class="title" align="right"><%= data.customData.box2.list[i].panelTitle %></div>
+            <% } %>
+                <div class="para"><%= data.customData.box2.list[i].txt %></div>
+            </div>
+            <% if(i%2==0){ %>
+            <div class="img-box fr">
+            <% }else{ %>
+            <div class="img-box fl">
+            <% } %>
+                <img src="images/service/<%= data.customData.box2.list[i].src %>" alt="tech">
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>

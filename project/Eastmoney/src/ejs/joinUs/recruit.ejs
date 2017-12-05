@@ -1,0 +1,38 @@
+<div class="recruit">
+    <div class="box-title">
+        <img src="images/joinus/01.png" alt="招聘人才">
+    </div>
+    <div class="box-content">
+            <ul>
+            <% for(var i=0; i<data.joinUsData.length; i++){ %>
+            <li class="job-box">
+                <div class="row01 clearfix">
+                <div class="jobname fl">
+                <h3><%= data.joinUsData[i].name %></h3>
+                </div>
+                <div class="job-addr fr">
+                <span>学历：<%= data.joinUsData[i].edu %></span><b>|</b><span>工作年限：<%= data.joinUsData[i].time %></span><b>|</b><span>工作地点：<%= data.joinUsData[i].addr %></span>
+            </div>
+            </div>
+            <div class="row02">
+                <h4>职位描述：</h4>
+            <% for(var j=0;j<data.joinUsData[i].duty.length; j++){ %>
+            <p><%= j+1 %>.<%= data.joinUsData[i].duty[j] %></p>
+            <% } %>
+            <h4>任职资格：</h4>
+            <% for(var k=0;k<data.joinUsData[i].ask.length; k++){ %>
+            <p><%= k+1 %>.<%= data.joinUsData[i].ask[k] %></p>
+            <% } %>
+            </div>
+            <div class="row03">
+                <a href="<%= data.joinUsData[i].href %>">
+                <img src="images/joinus/postbtn.png" alt="投递简历">
+                </a>
+                </div>
+                </li>
+                    <% } %>
+                </ul>
+    </div>
+    <div class="page" id="pagenation"></div>
+</div>
+

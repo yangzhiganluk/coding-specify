@@ -1,0 +1,14 @@
+.banner {
+  margin: 0 auto;
+  position: relative;
+  height: $height;
+  display: none;
+  .pic-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,43 @@
+<div class="box3">
+    <div class="box-title">
+        <img src="images/index/03.png" alt="企业荣誉">
+    </div>
+    <div class="box-content">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <% for(var i=0; i<data.indexData.box3Data.length; i++){ %>
+                    <div class="swiper-slide">
+                        <div class="loop-box clearfix">
+                            <div class="img-box fl">
+                                <img src="images/index/<%= data.indexData.box3Data[i].src %>" alt="swiper">
+                            </div>
+                            <div class="pic-txt fl">
+                                <h3><%= data.indexData.box3Data[i].name %></h3>
+                                <p><%= data.indexData.box3Data[i].txt %></p>
+                                <div class="btn-box">
+                                    <a href="coHonor.html">
+                                        <img src="images/index/more.png" alt="更多">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+</div>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        //设定初始化时slide的索引
+        initialSlide : 1,
+        //设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。
+        grabCursor : true,
+        loop: true,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    })
+</script>

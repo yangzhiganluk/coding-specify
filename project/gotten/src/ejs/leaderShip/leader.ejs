@@ -1,0 +1,27 @@
+<div class="leader">
+    <div class="top-title">
+        <img src="images/leader/01.png" alt="团队风貌">
+    </div>
+    <div class="content-box">
+            <ul>
+                <% for(var i=0; i<data.leaderData.length; i++){ %>
+                <% if(i%2==1){%>
+                <li class="bg-gray">
+                <% }else{ %>
+                <li>
+                <% } %>
+                    <div class="wrapper clearfix">
+                        <div class="img-box fl">
+                            <img src="images/leader/<%= data.leaderData[i].src %>" alt="人物">
+                        </div>
+                        <div class="txt-box fl">
+                            <p class="name"><%= data.leaderData[i].name %></p>
+                            <p class="posi"><%= data.leaderData[i].posi %></p>
+                            <p class="txt"><%= data.leaderData[i].txt %></p>
+                        </div>
+                    </div>
+                </li>
+                <% } %>
+            </ul>
+    </div>
+</div>

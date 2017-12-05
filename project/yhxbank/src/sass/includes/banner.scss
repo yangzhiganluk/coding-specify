@@ -1,0 +1,25 @@
+.banner {
+  margin: 0 auto;
+  margin-bottom: 49px;
+  width: 1366px;
+  position: relative;
+  .pic-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .inner-txt {
+    position: relative;
+    width: $content-width;
+    height: 386px;
+    margin: 0 auto;
+    .pic-txt {
+      position: absolute;
+      bottom: 130px;
+      left: 0;
+    }
+  }
+}

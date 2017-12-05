@@ -1,0 +1,13 @@
+.list {
+  padding-bottom: 70px;
+  .row-level {
+    padding-bottom: 67px;
+  }
+  .img-box {
+    margin-left: 22px;
+    &:first-child {
+      margin-left: 0;
+      width: 325px;
+    }
+  }
+}

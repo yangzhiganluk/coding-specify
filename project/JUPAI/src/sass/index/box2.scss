@@ -1,0 +1,18 @@
+.box2 {
+  .box-content {
+    width: 960px;
+    height: 180px;
+    background: url(../images/index/box2.png) no-repeat;
+    .text-box {
+      padding-top: 26px;
+      max-width: 770px;
+      margin: 0 auto;
+      text-align: center;
+      p {
+        font-size: 16px;
+        line-height: 32px;
+        color: #fff;
+      }
+    }
+  }
+}

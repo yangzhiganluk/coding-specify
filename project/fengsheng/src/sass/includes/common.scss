@@ -1,0 +1,45 @@
+.inner-title {
+  padding: 62px 0 34px 0;
+    display: table;
+    span {
+      display: inline-block;
+      vertical-align: bottom;
+      &.line {
+        b {
+          position: relative;
+          display: inline-block;
+          width: 5px;
+          height: 28px;
+          bottom: -2px;
+          background-color: rgba(176,121,7,1);
+        }
+      }
+      &.cn-title {
+        padding-right: 6px;
+        padding-left: 8px;
+        color: #313862;
+        font-size: 32px;
+        line-height: 32px;
+        font-family: "PingFangSC Bold","Microsoft YaHei";
+      }
+      &.en-title {
+        text-transform: uppercase;
+        color: #7b7b7b;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: "PingFangSC Bold","Microsoft YaHei";
+      }
+    }
+}
+.aboutUs,
+.leadership,
+.socialHornor,
+.joinUs,
+.devHistory,
+.leadership,
+.devCourse,
+.qC,
+.jobInfo {
+  width: 1040px;
+  margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+<div class="join">
+    <div class="toptitle">
+        <img src="images/join/01.png" alt="加入我们">
+    </div>
+    <div class="posilist clearfix">
+        <% for(var t=0; t<data.joinUsData.length; t=t+2){ %>
+        <% console.log(t) %>
+        <div class="outwrap fl">
+            <% for(var i=0;i<data.joinUsData.length/2; i++){ %>
+            <div class="insidewrap">
+                <div class="jobname"><p><%= data.joinUsData[t+i].name %></p></div>
+                <div class="boxhead">
+                    <p>学历：<span><%= data.joinUsData[t+i].edu %></span><b>|</b>工作年限：<span><%= data.joinUsData[t+i].workTime %></span><b>|</b>意向：<span><%= data.joinUsData[t+i].jobTime %></span></p>
+                </div>
+                <div class="boxbody">
+                    <div class="duty content">
+                        <h3>岗位职责：</h3>
+                        <% for(var j=0; j<data.joinUsData[t+i].duty.length; j++){ %>
+                        <p><%= j+1 %>、<%= data.joinUsData[t+i].duty[j] %></p>
+                        <% } %>
+                    </div>
+                    <div class="ask content">
+                        <h3>任职要求：</h3>
+                        <% for(var k=0; k<data.joinUsData[t+i].ask.length; k++){ %>
+                        <p><%= k+1 %>、<%= data.joinUsData[t+i].ask[k] %></p>
+                        <% } %>
+                    </div>
+                    <div class="postbtn">
+                        <a href="<%= data.joinUsData[t+i].target %>">立即投递</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+</div>

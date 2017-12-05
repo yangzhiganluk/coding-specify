@@ -1,0 +1,75 @@
+.talentsWanted {
+  .box-title {
+    padding-top: 74px;
+    padding-bottom: 55px;
+    text-align: center
+  }
+  .box-content {
+    .info {
+      max-width: 910px;
+      margin: 0 auto 36px;
+      text-align: center;
+      p {
+        font-family: "PingFangSC Regular";
+        font-size: 18px;
+        color: #121721;
+      }
+    }
+    .job-box {
+      width: 1034px;
+      margin: 0 auto;
+      .job-item {
+        position:relative;
+        margin-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 68px;
+        font-family: "Microsoft YaHei";
+        color: #555;
+        .row-01 {
+          position: relative;
+          left: -10px;
+          height: 57px;
+        }
+        .col {
+          width: 162px;
+          margin-right: 10px;
+          h3 {
+            text-align: right;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .detail {
+          list-style-type: decimal;
+          list-style-position: inside;
+          font-size: 16px;
+          line-height: 30px;
+        }
+        .ask {
+          .detail {
+            max-width: 670px;
+          }
+        }
+        .row-02,
+        .row-03 {
+          margin-top: 29px;
+        }
+        .row-04 {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .btn {
+          position: absolute;
+          width: 47px;
+          height: 132px;
+          top: 175px;
+          right: 70px;
+        }
+      }
+    }
+  }
+}

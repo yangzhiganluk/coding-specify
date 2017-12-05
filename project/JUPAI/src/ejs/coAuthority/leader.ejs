@@ -1,0 +1,30 @@
+<div class="leader">
+    <div class="box-title">
+        <span class="title-01">高管团队</span>
+        <b>|</b>
+        <span class="title-02">Top Management Team</span>
+    </div>
+    <div class="leader-box">
+            <% for(var t=0; t< data.coAuthorityData.length; t=t+3 ){ %>
+            <div class="leader-row clearfix">
+                <% for(var i=0; i<3; i++){ %>
+                    <% if(i==1){ %>
+                    <div class="leader-cell fl leader-mid">
+                    <% }else{ %>
+                    <div class="leader-cell fl">
+                    <% } %>
+                        <div class="img-box">
+                            <img src="images/coAuthority/<%= data.coAuthorityData[t+i].src %>" alt="头像">
+                        </div>
+                        <p class="name"><%= data.coAuthorityData[t+i].name %></p>
+                        <p class="posi"><%= data.coAuthorityData[t+i].posi %></p>
+                        <p class="edu"><%= data.coAuthorityData[t+i].edu %></p>
+                        <div class="info-box">
+                            <p class="info"><%= data.coAuthorityData[t+i].txt %></p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+            <% } %>
+    </div>
+</div>

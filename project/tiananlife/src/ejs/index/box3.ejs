@@ -1,0 +1,11 @@
+<div class="box3">
+    <div class="pic-join">
+        <img src="images/index/joinus.jpg" alt="加入我们">
+        <a href="joinUs.html" class="btn-join"></a>
+    </div>
+    <div class="feature">
+        <% for(var i=0; i< data.indexData.box3Data.length; i++){ %>
+        <img src="images/index/<%= data.indexData.box3Data[i] %>" alt="菱形">
+        <% } %>
+    </div>
+</div>

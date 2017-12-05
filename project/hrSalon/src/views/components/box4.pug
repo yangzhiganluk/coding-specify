@@ -1,0 +1,14 @@
+//Created by juanl on 2017/8/18.
+.box4
+    .title-unit
+        img(src="images/title.png")
+        | 分享会
+        span.inline-block .
+        | #{locals.box4.title}
+    .box-content
+        ul
+            each item in locals.box4.txt
+                li
+                    img(src=`images/${item.src}`)
+                    span #{item.key}：
+                    | #{item.txt}

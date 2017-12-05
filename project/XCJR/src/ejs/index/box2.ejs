@@ -1,0 +1,13 @@
+<div class="box2">
+    <div class="fea clearfix">
+        <% for(var i=0; i<data.indexData.box2.length; i++){ %>
+        <% if(i==1){ %>
+            <div class="col col-center fl ">
+        <% }else{ %>
+            <div class="col fl">
+        <% } %>
+            <img src="images/index/<%= data.indexData.box2[i].title %>" alt="">
+        </div>
+        <% } %>
+    </div>
+</div>

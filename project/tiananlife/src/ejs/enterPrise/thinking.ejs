@@ -1,0 +1,28 @@
+<div class="thinking">
+    <div class="box-title">
+        <img src="images/enterprise/thinking.png" alt="企业思维">
+    </div>
+    <div class="box-content clearfix">
+        <% for(var i=0; i< data.enterPriseData.length; i++){ %>
+            <div class="item">
+                <div class="item-head">
+                    <div class="item-head-text">
+                        <h3><%= data.enterPriseData[i].name %></h3>
+                        <div class="line"></div>
+                        <h4><%= data.enterPriseData[i].sign %></h4>
+                    </div>
+                    <img class="item-bg" src="images/enterprise/<%= data.enterPriseData[i].src %>" alt="">
+                </div>
+                <% if(i===data.enterPriseData.length-1){ %>
+                <div class="item-body last clearfix">
+                <% }else{ %>
+                <div class="item-body">
+                <% } %>
+                    <% for(var j=0; j<data.enterPriseData[i].text.length; j++){ %>
+                        <p><%= data.enterPriseData[i].text[j] %></p>
+                    <% } %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>

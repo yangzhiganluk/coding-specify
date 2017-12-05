@@ -1,0 +1,30 @@
+<div class="recruit">
+    <div class="box-title">
+        <span class="title-01">人才招聘</span>
+        <b>|</b>
+        <span class="title-02">Recruit</span>
+    </div>
+    <div class="box-content">
+            <ul>
+            <% for(var i=0; i<data.joinUsData.length; i++){ %>
+                <li class="job-box">
+                    <h3><%= data.joinUsData[i].name %></h3>
+                    <h4>职位描述：</h4>
+                    <% for(var j=0;j<data.joinUsData[i].duty.length; j++){ %>
+                        <p><%= j+1 %>.<%= data.joinUsData[i].duty[j] %></p>
+                    <% } %>
+                    <h4>任职资格：</h4>
+                    <% for(var k=0;k<data.joinUsData[i].ask.length; k++){ %>
+                        <p><%= k+1 %>.<%= data.joinUsData[i].ask[k] %></p>
+                    <% } %>
+                    <div class="img-box">
+                        <a href="<%= data.joinUsData[i].href %>">
+                            <img src="images/joinus/go.png" alt="立即投递">
+                        </a>
+                    </div>
+                </li>
+            <% } %>
+            </ul>
+    </div>
+</div>
+

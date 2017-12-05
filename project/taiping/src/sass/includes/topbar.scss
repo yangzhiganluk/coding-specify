@@ -1,0 +1,45 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    height: 80px;
+    font-size: 0;
+    .logo {
+
+    }
+    .nav {
+      height: 80px;
+      ul li {
+        position: relative;
+        display: inline-block;
+        height: 80px;
+        font-family: "Microsoft YaHei";
+        a {
+          display: block;
+          margin-top: 40px;
+          padding: 0 23px;
+          font-size: 18px;
+          color: #555;
+        }
+        .arrow-up {
+          display: none;
+          position: absolute;
+          width: 17px;
+          height: 9px;
+          background: url(../images/index/arrow-up.png) no-repeat 100% 100%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &.active{
+          a {
+            color: #006cb7;
+          }
+          .arrow-up {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

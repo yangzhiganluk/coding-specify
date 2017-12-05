@@ -1,0 +1,22 @@
+.wrapper {
+  width: $content-width;
+  margin: 0 auto;
+}
+.box-title {
+  margin: 21px 0 36px 0;
+  padding-left: 7px;
+  border-left: 6px solid #28559a;
+  line-height: 24px;
+  font-size: 22px;
+  color: #4a4a4a;
+  .title-01 {
+    font-weight: bold;
+  }
+  .title-02 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+  b {
+    margin: 0 12px;
+  }
+}

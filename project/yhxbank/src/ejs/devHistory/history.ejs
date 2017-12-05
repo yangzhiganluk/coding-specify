@@ -1,0 +1,46 @@
+<div class="history">
+    <img src="images/devHistory/devtoppic.png" class="devtoppic" alt="发展历程">
+    <div class="yearlist clearfix">
+        <a href="javascript: void(0)" class="arrow-left">
+            <img src="images/joinus/arrowleft.png" alt="向左">
+        </a>
+        <ul>
+            <% for(var i=0; i<data.historyData.length; i++){ %>
+            <% if(i==1){ %>
+                <li class="year active">
+            <% }else {%>
+                <li class="year">
+            <% } %>
+                <%= data.historyData[i].yeardeed.year %></li>
+            <% } %>
+        </ul>
+        <a href="javascript: void(0)" class="arrow-right">
+            <img src="images/joinus/arrowright.png" alt="向右">
+        </a>
+    </div>
+    <div class="monthlist">
+        <% for(var t=0; t<data.historyData.length; t++){ %>
+        <% if(t==1){ %>
+        <ul class="active">
+        <% }else{ %>
+        <ul>
+        <% } %>
+            <% for(var j=0; j<data.historyData[t].yeardeed.monthdeed.length; j++){ %>
+            <li class="everymonth clearfix">
+                <div class="col-1 fl">
+                    <p><%= data.historyData[t].yeardeed.year+'.'+data.historyData[t].yeardeed.monthdeed[j].month %></p>
+                </div>
+                <div class="col-2 fl">
+                    <% for(var k=0; k<data.historyData[t].yeardeed.monthdeed[j].deed.length; k++){ %>
+                    <div class="deed">
+                        <p><%= data.historyData[t].yeardeed.monthdeed[j].deed[k] %></p>
+                        <i class="lc-icon"></i>
+                    </div>
+                    <% } %>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+        <% } %>
+    </div>
+</div>

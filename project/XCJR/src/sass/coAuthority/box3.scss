@@ -1,0 +1,25 @@
+.box3 {
+  .core-team {
+    max-width: 710px;
+    margin: 0 auto;
+    #column1,
+    #column2 {
+      float: left;
+      position: relative;
+      width: 253px;
+      height: 350px;
+    }
+    .remark {
+      width: 100px;
+      float: left;
+      margin-top: 15%;
+      .item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 6px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}

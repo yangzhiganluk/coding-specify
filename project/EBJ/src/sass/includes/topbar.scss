@@ -1,0 +1,42 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    font-size: 0;
+    .logo {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .nav {
+      ul li {
+        float: left;
+        margin-left: 69px;
+        padding: 22px 0;
+        text-align: center;
+        font-family: "Microsoft YaHei";
+        a {
+          display: block;
+          color: #9a9a9a;
+          .cn {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: bold;
+          }
+          .en {
+            font-size: 10px;
+            line-height: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+        &.active{
+          a {
+            color: #4a959a;
+          }
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

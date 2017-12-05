@@ -1,0 +1,14 @@
+.box1 {
+  text-align: center;
+  .box-text {
+    width: 676px;
+    margin: 0 auto;
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      &.up {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}

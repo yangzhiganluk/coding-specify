@@ -1,0 +1,25 @@
+{
+  "name": "coding",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "^6.0.0",
+    "jquery": "^3.2.1",
+    "swiper": "idangerous-swiper#^3.4.2",
+    "bootstrap": "^3.3.7",
+    "jquery.nicescroll": "nicescroll#^3.7.0"
+  },
+  "authors": [
+    "llj <juanlilu@yeah.net>"
+  ]
+}

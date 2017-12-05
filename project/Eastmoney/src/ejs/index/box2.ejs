@@ -1,0 +1,19 @@
+<div class="box2">
+    <div class="box-title">
+        <img src="images/index/02.png" alt="社会责任">
+    </div>
+    <div class="box-content">
+        <ul class="clearfix">
+            <% for(var i=0; i<data.indexData.box2Data.length; i++){ %>
+                <li class="fl duty-item">
+                    <img src="images/index/<%= data.indexData.box2Data[i].src %>" alt="img">
+                    <div class="txt">
+                        <h3><%= data.indexData.box2Data[i].name %></h3>
+                        <p><%= data.indexData.box2Data[i].txt %></p>
+                    </div>
+                    <i class="arrow-box"></i>
+                </li>
+            <%} %>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <title>云招聘</title>
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendor/jquery-city-picker/css/city-picker.css" rel="stylesheet">
+    <link href="vendor/jquery-city-picker/css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/register.css">
+
+    <!--jquery-->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.nicescroll.min.js"></script>
+
+    <script src="vendor/jquery-city-picker/js/city-picker.data.js"></script>
+    <script src="vendor/jquery-city-picker/js/city-picker.js"></script>
+    <script src="vendor/jquery-city-picker/js/main.js"></script>
+
+    <script src="js/signin.js"></script>
+    <script src="js/bundle.js"></script>
+</head>
+
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <div class="topbar-inner clearfix">
+            <div class="logo">
+                <a href="javascript:void(0)"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <ul class="nav">
+                
+                
+                
+                <li>
+                    
+                    <a href="index.html">
+                        首页
+                    </a>
+                    
+                    
+                
+                
+                
+                <li>
+                    
+                    <a href="custom.html">
+                        客户服务
+                    </a>
+                    
+                    
+                
+                
+                
+                <li>
+                    
+                    <a href="aboutus.html">
+                        关于我们
+                    </a>
+                    
+                    
+                </li>
+                
+                
+            </ul>
+            <div class="tel">
+                <a  href="register.html"><img src="images/tel.png" alt="电话"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner" align="center">
+</div>
+<div class="application">
+    <!-- Modal -->
+    <div class="modal-form" >
+        <form role="form" id="register-form">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <p class="modal-title">申请演示</p>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-doc" align="center">
+                        为确保能及时联系到您，请填写您的真实信息，审核通过后，我们将会在24小时内联系您，目前51招聘云系统演示只针对企业用户开放。
+                    </p>
+
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="contact" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">姓名 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=text id="contact" class="form-control" placeholder="请填写您的姓名">
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="designation" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">职位 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=text id="designation" class="form-control" placeholder="请填写您目前的职位">
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="tel" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">手机 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=tel id="tel" class="form-control" placeholder="请填写您的手机号码">
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="mailbox" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">邮箱 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=email id="mailbox" class="form-control" placeholder="请填写您的邮箱号码">
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="company" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">公司名称 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=text id="company" class="form-control" placeholder="请填写您所在的公司名称">
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="size" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">公司规模 :</span>
+                                    </label>
+                                    <div class="entryIn">
+                                        <input type=text id="size" readonly class="form-control" placeholder="请填写您所在公司的规模">
+                                        <!--<span id="size"  class="form-control dropdown">请填写您所在公司的规模</span>-->
+                                        <div class="input-group-btn company-size">
+                                            <button type="button" id="company-size" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="company-size">
+                                                
+                                                    <li><a href="javascript:void(0)">少于50人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">50-50人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">150-500人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">500-1000人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">1000-5000人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">5000-10000人</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                                    <li><a href="javascript:void(0)">10000人以上</a></li>
+                                                    <!--<li class="divider"></li>-->
+                                                
+                                            </ul>
+                                        </div><!-- /btn-group -->
+
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+
+                                
+
+                                    <label for="province" class="hint">
+                                        <span class="hint-icon">*</span>
+                                        <span class="hint-txt">所在省份 :</span>
+                                    </label>
+                                    <div class="entryIn">
+
+                                        <div class="region-picker">
+                                            <input type=text id="province" readonly class="form-control"  data-toggle="city-picker" placeholder="请填写您所在省份">
+                                        </div>
+
+                                    </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                                <label for="message-text" class="control-label hint">
+                                    <span class="hint-txt">留言 :</span>
+                                </label>
+                                <div class="entryIn">
+                                    <textarea class="form-control"
+                                              id="message-text"
+                                              placeholder="告诉我们您目前在招聘方面遇到的难题，我们会尽可能的帮您解决"
+                                              row="4"
+                                              type=text></textarea>
+                                </div>
+                            
+                        </div>
+                        
+
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button type="button"
+                                class="btn btn-primary btn-lg"
+                                data-toggle="popover"
+                                id="submit">提交申请</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="dialog-container">
+    <!--<div class="mask"></div>-->
+    <div class="dialog">
+        <div class="dialog_bd">
+        </div>
+        <div class="dialog_ft">
+            <a href="javascript:void(0)" class="dialog-btn" onclick="bundle.closeDialog()">我知道了</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-inner">
+        <div class="footer-info  clearfix">
+            <ul>
+                
+                <li class="fl">
+                    <span>电话：</span>
+                    <span>400-885-6112</span>
+                </li>
+                
+                <li class="fl">
+                    <span>邮箱：</span>
+                    <span>Services@51jrq.com</span>
+                </li>
+                
+                <li class="fl">
+                    <span>地址：</span>
+                    <span>上海市浦东新区纳贤路800号科海大楼8楼</span>
+                </li>
+                
+            </ul>
+        </div>
+        <p> ©2014 51jrq.com 沪ICP备10213565号-1 Web designed by: 海擎金融信息服务（上海）有限公司</p>
+    </div>
+</div>
+</body>
+</html>

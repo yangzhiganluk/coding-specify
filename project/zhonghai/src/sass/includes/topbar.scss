@@ -1,0 +1,35 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    height: 80px;
+    font-size: 0;
+    .logo {
+      display: table;
+      a {
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+      }
+    }
+    .nav {
+      ul li {
+        float: left;
+        margin-left: 54px;
+        height: 80px;
+        line-height: 80px;
+        font-family: "Microsoft YaHei";
+        border-bottom: 3px solid transparent;
+        a {
+          font-size: 16px;
+          color: #666;
+        }
+        &.active{
+          border-bottom: 3px solid #d4974e;
+          a {
+            color: #d4974e;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    font-size: 0;
+    .logo {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    .nav {
+      padding-top: 7px;
+      ul li {
+        float: left;
+        width: 122px;
+        height: 57px;
+        text-align: center;
+        line-height: 57px;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        a {
+          display: block;
+          color: #e85100;
+        }
+        &.active{
+          background: url(../images/navbg.png) no-repeat;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

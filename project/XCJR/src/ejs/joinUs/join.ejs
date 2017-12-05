@@ -1,0 +1,36 @@
+<div class="join">
+    <div class="toptitle">
+        <img src="images/join/01.png" alt="人才招聘">
+    </div>
+    <div class="join-info">
+        <ul>
+            <% for(var i=0;i<data.joinUsData.length; i++){ %>
+            <li>
+                <% if(i%2==0){ %>
+                <div class="tran-bg job-list">
+                <% }else{ %>
+                <div class="dark-bg job-list">
+                <% } %>
+                    <div class="wrapper">
+                        <div class="name">
+                            <span><%= data.joinUsData[i].name %></span><a href="<%=  data.joinUsData[i].target %>" class="go-posi"><img src="images/join/go.png" alt="go"></a>
+                        </div>
+                        <h3>岗位职责</h3>
+                        <div class="duty">
+                            <% for(var j=0;j<data.joinUsData[i].duty.length;j++){ %>
+                            <p><%= j+1 %>、&nbsp;<%= data.joinUsData[i].duty[j] %></p>
+                            <% } %>
+                        </div>
+                        <h3>岗位要求</h3>
+                        <div class="ask">
+                            <% for(var k=0;k<data.joinUsData[i].ask.length;k++){ %>
+                            <p><%= k+1 %>、&nbsp;<%= data.joinUsData[i].ask[k] %></p>
+                            <% } %>
+                        </div>
+                        <div class="addr"><span>工作地点：</span><%= data.joinUsData[i].addr %></div>
+                    </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

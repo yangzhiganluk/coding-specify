@@ -1,0 +1,42 @@
+<div class="box2">
+    <div class="toptitle">
+        <img src="images/index/02.png" alt="团队风采">
+    </div>
+    <div class="slide">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <% for(var i=0; i<data.indexData.swiperPic.length; i++){ %>
+                <div class="swiper-slide">
+                    <div class="loopbox">
+                        <img src="images/index/<%= data.indexData.swiperPic[i].src %>" alt="swiper">
+                        <div class="pic-txt">
+                            <h3><%= data.indexData.swiperPic[i].name %></h3>
+                            <h4><%= data.indexData.swiperPic[i].posi %></h4>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+                //设定初始化时slide的索引
+                initialSlide : 1,
+                //设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。
+                grabCursor : true,
+                loop: true,
+                slidesPerView: 3,
+                width: 579,
+                centeredSlides: true,
+                // 如果需要前进后退按钮
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev'
+            })
+        </script>
+        <div class="morebtn">
+            <a href="coAuthority.html"><img src="images/index/shoumorebtn.png" alt="查看更多"></a>
+        </div>
+</div>

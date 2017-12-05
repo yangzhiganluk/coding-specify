@@ -1,0 +1,19 @@
+<div class="thinking">
+    <div class="box-title">
+        <img src="images/socialduty/01.png" alt="社会责任">
+    </div>
+    <div class="box-content clearfix">
+        <% for(var i=0; i<data.socialDutyData.length; i++){ %>
+            <div class="subbox clearfix">
+                <div class="img-box fl">
+                    <img src="images/socialduty/<%= data.socialDutyData[i].src %>" alt="东方财富">
+                </div>
+                <div class="att-content fl">
+                    <h3><%= data.socialDutyData[i].name %></h3>
+                    <div class="line"></div>
+                    <p><%= data.socialDutyData[i].text %></p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>

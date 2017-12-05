@@ -1,0 +1,38 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    height: 80px;
+    font-size: 0;
+    .logo {
+      height: 80px;
+      a {
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+      }
+    }
+    .nav {
+      height: 80px;
+      line-height: 80px;
+      ul li {
+        float: left;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        a {
+          padding: 0 25px;
+          color: #333;
+        }
+        &:first-child {
+          a {
+            border-left: none;
+          }
+        }
+        &.active{
+          a {
+            color: #d9a31c;
+          }
+        }
+      }
+    }
+  }
+}

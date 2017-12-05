@@ -1,0 +1,29 @@
+<div class="topbar">
+    <div class="wrapper">
+        <div class="topbar-inner clearfix">
+            <div class="logo">
+                <a href="javascript:void(0)"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <ul class="nav">
+                <% for(var i=0; i<data.topBarData.length-1;i++){%>
+                <% /*传入标签中加入active类*/%>
+                <% if(data.topBarData[i].key == data.filename ){ %>
+                <li class="active">
+                    <% }else{ %>
+                <li>
+                    <% } %>
+                    <a href="<%= data.topBarData[i].href %>">
+                        <%= data.topBarData[i].name  %>
+                    </a>
+                    <% /*最后一个li标签添加</li>兼容ie*/%>
+                    <% if(i===data.topBarData.length-2){%>
+                </li>
+                <% } %>
+                <% } %>
+            </ul>
+            <div class="tel">
+                <a  href="register.html"><img src="images/tel.png" alt="电话"></a>
+            </div>
+        </div>
+    </div>
+</div>

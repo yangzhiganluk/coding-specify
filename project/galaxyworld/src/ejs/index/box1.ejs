@@ -1,0 +1,14 @@
+<div class="box1">
+    <div class="title-top">
+        <h2>关于我们</h2>
+        <h3>about galaxy world</h3>
+    </div>
+    <div class="box-text">
+        <% for(var i=0; i<data.indexData.top.length; i++){ %>
+            <p class="up"><%= data.indexData.top[i] %></p>
+        <% } %>
+        <% for(var j=0; j<data.indexData.bottom.length; j++){ %>
+            <p class="down"><%= data.indexData.bottom[j] %></p>
+        <% } %>
+    </div>
+</div>

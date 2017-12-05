@@ -1,0 +1,31 @@
+.leadership {
+  .leader-pics {
+    margin-top: 20px;
+    li {
+      margin-bottom: 63px;
+      height: 188px;
+      width: 520px;
+      &:first-child+li+li+li+li,
+      &:first-child+li+li+li+li+li {
+        margin-bottom: 0;
+      }
+    }
+    .remark {
+      margin-left: 20px;
+      max-width: 303px;
+      h3 {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #7b7b7b;
+        font-family: 'PingFangSC Bold',"Microsoft YaHei";
+      }
+      p {
+        font-size: 16px;
+        color: #acacac;
+        line-height: 32px;
+        font-family: 'PingFangSC Regular',"Microsoft YaHei";
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    width: $content-width;
+    .logo {
+      .table {
+        height: 92px;
+        display: table;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+    .fr {
+      margin-right: 14px;
+      ul li {
+          float: left;
+          padding-top: 48px;
+          padding-bottom: 28px;
+          width: 120px;
+          text-align: center;
+          background-color: transparent;
+          line-height: 16px;
+          font-size: 16px;
+          font-family: "Microsoft YaHei";
+          a {
+            display: block;
+            color: #140805;
+            font-weight: 700;
+          }
+          &.active{
+            background-color: #7e0204;
+            a {
+              color: #fff;
+            }
+          }
+      }
+    }
+  }
+}

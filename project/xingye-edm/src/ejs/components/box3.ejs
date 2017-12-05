@@ -1,0 +1,26 @@
+<div class="box3">
+    <ul>
+        <% for(var i = 0; i<data.edmData.length; i++){ %>
+        <li class="wrap-list">
+            <div class="title">
+                <h2 class="posi"><%= data.edmData[i].posi %></h2>
+                <h2 class="salary"><%= data.edmData[i].salary %></h2>
+            </div>
+            <ul>
+            <% for(var j=0; j<data.edmData[i].duty.length; j++){ %>
+                <li class="duty"><span><%= j+1 %>.</span><%= data.edmData[i].duty[j]%></li>
+            <% } %>
+            </ul>
+        </li>
+        <% } %>
+    </ul>
+    <div class="logo clearfix">
+        <% for( var k=0; k<data.stockCodeData.length; k++){%>
+        <div>
+            <img src="<%= data.stockCodeData[k].img%>" alt="logo">
+        </div>
+        <div class="stock-code">
+            <%= data.stockCodeData[k].alt%></div>
+        <% } %>
+    </div>
+</div>

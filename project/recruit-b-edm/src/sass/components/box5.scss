@@ -1,0 +1,24 @@
+.box5 {
+  td {
+    position: relative;
+    .button {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      top: 32%;
+      width: 20%;
+      height: 21%;
+      display: block;
+      //background-color: red;
+    }
+    .homelink {
+      position: absolute;
+      right: 25%;
+      bottom: 0;
+      width: 20%;
+      height: 15%;
+      //background-color: red;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.box5 {
+  .box-content {
+    position: relative;
+    .theme {
+      .title {
+        padding-left: 20px;
+        color: #b4ae65;
+        vertical-align: middle;
+      }
+    }
+    .time {
+      padding: 0 20px;
+    }
+    .cross-line {
+      width: 35px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .db-line {
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      z-index: -1;
+      height: 240px;
+      width: 10px;
+      border-left: 1px solid #c8c7c7;
+      border-right: 1px solid #c8c7c7;
+    }
+    .txt {
+      vertical-align: baseline;
+    }
+  }
+}

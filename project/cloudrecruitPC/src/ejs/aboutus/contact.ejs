@@ -1,0 +1,37 @@
+<div class="contact" align="center">
+    <p class="title-cn"><%= data.aboutusData.box2.title %></p>
+    <p class="title-en"><%= data.aboutusData.box2.en %></p>
+    <span class="title-rect"></span>
+    <p class="title-info"><%= data.aboutusData.box2.txt %></p>
+    <div class="contact-info clearfix">
+        <div class="fl col-1">
+            <ul>
+                <% for(var i=0; i<data.aboutusData.box2.list.length; i++){ %>
+                <% if(data.aboutusData.box2.list[i].key == 'geo'){ %>
+                <li class="geo">
+                <% }else{ %>
+                <li>
+                <% } %>
+                    <div class="icons">
+                        <img src="images/aboutus/<%= data.aboutusData.box2.list[i].src %>" alt="icon">
+                    </div>
+                    <span><%= data.aboutusData.box2.list[i].name %></span>
+                    <span><%= data.aboutusData.box2.list[i].txt %></span>
+                </li>
+                <% }%>
+            </ul>
+        </div>
+        <div class="fr col-2 clearfix">
+            <div class="img-box fl">
+                <img src="images/aboutus/weixin.png" alt="weixin">
+            </div>
+            <div class="txt-box fl">
+                <div class="jrq"><img src="images/aboutus/gzh.png" alt="gzh"></div>
+                <p>www.51jrq.com</p>
+                <div class="vol"></div>
+                <p>扫一扫·关注我们</p>
+                <p>抢先了解行业前沿咨询，人力资源工作技巧</p>
+            </div>
+        </div>
+    </div>
+</div>

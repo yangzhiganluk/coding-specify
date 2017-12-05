@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>互联网+地产+金融</title>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta content="打造地产生态圈内领先的金融服务商" name="description" />
+    <meta name="keywords" content="互联网+地产+金融"/>
+    <meta name="Author" content="lulj">
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="vendor\swiper\dist\css\swiper.min.css">
+    <link rel="stylesheet" href="styles/<%= data.filename%>.css">
+    <% /*jquery.js*/ %>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/swiper/dist/js/swiper.jquery.js"></script>
+    <script src="vendor/swiper/dist/js/swiper.js"></script>
+    <script src="js/bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            var scale = $(window).width() / 1366;
+            $('.banner').height(386*scale);
+            $('.banner .pic-bg').height(386*scale);
+            $('.banner').css({
+                display: 'block'
+            })
+        })
+    </script>
+</head>
+

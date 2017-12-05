@@ -1,0 +1,91 @@
+.jobInfo {
+  .joblist {
+    margin-top: 30px;
+    color: #666;
+    .jobitem {
+      display: inline-block;
+      font-size: 20px;
+      font-family: 'PingFangSC Regular','Microsoft YaHei';
+      color: #666;
+      vertical-align: top;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(172,172,172,.4);
+      margin-left: 45px;
+      cursor: pointer;
+      &:first-child {
+        margin-left: 0;
+      }
+      &.active {
+        color: #ea995d;
+        border-bottom-color: rgba(234,153,93,.4);
+      }
+    }
+    .listitem {
+      &.active {
+        display: block;
+      }
+      display: none;
+      h4 {
+        padding: 40px 0 10px 0;
+        font-size: 25px;
+        font-family: 'Microsoft YaHei';
+      }
+      h5 {
+        padding: 20px 0 14px 0;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Microsoft YaHei';
+      }
+      .duty,
+      .ask {
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-family:'PingFangSC Regular','Microsoft YaHei';
+        list-style-type: disc;
+        margin-left: 14px;
+      }
+      .deliver {
+        position: relative;
+        margin-top: 30px;
+        width: 1040px;
+        height: 191px;
+        .head_portrait {
+          width: 191px;
+          height: 191px;
+        }
+        .remarks {
+          padding-left: 26px;
+          width: 849px;
+          height: 191px;
+          box-sizing: border-box;
+          border: 1px solid #d2d2d2;
+          border-left: none;
+          h4 {
+            padding: 28px 0 16px 0;
+          }
+          p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+          }
+          .btn-deliver {
+            position: absolute;
+            top: 74px;
+            right: 124px;
+            a {
+              display: block;
+              height: 41px;
+              line-height: 41px;
+              text-align: center;
+              width: 122px;
+              background: url(../images/deliver.png) no-repeat center center;
+              color: #fff;
+              font-size: 18px;
+              font-family: 'Microsoft YaHei';
+            }
+          }
+        }
+      }
+    }
+  }
+}

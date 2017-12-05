@@ -1,0 +1,38 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    width: $content-width;
+    .logo {
+      padding: 10px 0;
+    }
+    .fr {
+      margin-top: 15px;
+      ul li {
+          float: left;
+        margin-left: 35px;
+          width: 85px;
+          height: 32px;
+          border: 1px solid transparent;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+          line-height: 32px;
+          text-align: center;
+          font-size: 16px;
+          a {
+            color: #6f6f6f;
+            font-weight: 700;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+          &.active{
+            border-color: #f3b23c;
+            a {
+              color: #f3b23c;
+            }
+          }
+      }
+    }
+  }
+}

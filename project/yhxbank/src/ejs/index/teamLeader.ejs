@@ -1,0 +1,16 @@
+<div class="teamLeader">
+    <div class="toptitle">
+        <img src="images/index/02.png" alt="团队领导">
+    </div>
+    <div class="clearfix">
+        <div class="fl">
+            <img src="images/index/chengfang.png" alt="chengfang">
+        </div>
+        <div class="fl content">
+            <h3><%= data.indexData.teamLeader.title %></h3>
+            <% for(var i=0; i<data.indexData.teamLeader.content.length; i++){ %>
+            <p><%= data.indexData.teamLeader.content[i] %></p>
+            <% } %>
+        </div>
+    </div>
+</div>

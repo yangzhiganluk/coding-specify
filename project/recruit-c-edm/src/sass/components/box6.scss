@@ -1,0 +1,18 @@
+.box6 {
+  .Subscribe {
+    color: #00bac1;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0px;
+    a {
+      color: #00bac1;
+      text-decoration: none;
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    a:first-child {
+      margin-right: 10px;
+    }
+  }
+}

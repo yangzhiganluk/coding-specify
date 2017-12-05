@@ -1,0 +1,19 @@
+<div class="honor">
+    <div class="toptitle">
+        <img src="images/index/01.png" alt="公司荣誉">
+    </div>
+    <div class="honor-txt">
+        <ul>
+            <% for(var i=0; i<data.coHonorData.length; i++){ %>
+            <li class="honorlist clearfix">
+                <div class="col-1 fl"></div>
+                <div class="col-2 fl">
+                    <i class="lc-icon"></i>
+                    <h3><%= data.coHonorData[i].title %></h3>
+                    <p><%= data.coHonorData[i].deed %></p>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

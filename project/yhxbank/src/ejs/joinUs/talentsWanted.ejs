@@ -1,0 +1,57 @@
+<div class="talentsWanted">
+    <div class="toptitle">
+        <img src="images/index/01.png" alt="加入我们">
+    </div>
+    <div class="joblist">
+        <ul class="listbox">
+            <% for(var t=0,c=5; t<data.joinUsData.length; t++){ %>
+            <% if(t===1){ %>
+            <li class="jobitem active">
+            <% }else{ %>
+            <li class="jobitem">
+            <% } %>
+                <i class="dia-icon"></i>
+                <span><%= data.joinUsData[t].name %></span>
+            </li>
+            <% } %>
+        </ul>
+        <div class="jobbox">
+            <ul>
+            <% for(var i=0; i<data.joinUsData.length; i++){ %>
+                <li class="jobInfo">
+                <% } %>
+                    <div class="row-01  clearfix">
+                        <div class="portrait-posi fl clearfix">
+                            <img src="images/joinUs/<%= data.joinUsData[i].src %>" alt="头像" class="fl">
+                            <div class="posititle fl">
+                                <h2><%= data.joinUsData[i].name %></h2>
+                                <p><%= data.joinUsData[i].eName %></p>
+                            </div>
+                        </div>
+                        <div class="detail fr">
+                            <span>学历：<em><%= data.joinUsData[i].edu %></em></span>
+                            <span>工作年限：<em><%= data.joinUsData[i].workTime %></em></span>
+                            <span>工作地点：<em><%= data.joinUsData[i].addr %></em></span>
+                        </div>
+                    </div>
+                    <div class="row-02 clearfix">
+                        <div class="jobduty fl">
+                            <h3>工作职责:</h3>
+                        </div>
+                        <div class="dutydetail fl">
+                            <ol>
+                                <% for(var j=0; j<data.joinUsData[i].duty.length; j++){ %>
+                                    <li class="duty"><%= data.joinUsData[i].duty[j] %></li>
+                                <% } %>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row-03">
+                        <a href="<%= data.joinUsData[i].target %>"><img src="images/joinUs/btn.png" alt=""></a>
+                    </div>
+                </li>
+            <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

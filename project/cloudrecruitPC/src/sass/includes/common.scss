@@ -1,0 +1,26 @@
+.wrapper {
+  width: $content-width;
+  margin: 0 auto;
+}
+.inner-wrapper {
+  width: $inner-width;
+  margin: 0 auto;
+}
+.title-cn {
+  font-size: 36px;
+}
+.title-en {
+  margin-top: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.title-rect {
+  display: inline-block;
+  margin-top: 20px;
+  width: 30px;
+  height: 4px;
+  background-color: #4aa9d8;
+}
+.title-info {
+  margin-top: 20px;
+}

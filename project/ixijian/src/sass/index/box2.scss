@@ -1,0 +1,63 @@
+.box2 {
+  .morebtn {
+    margin-top: 58px;
+    text-align: center;
+  }
+  .slide {
+    position: relative;
+    .swiper-button-prev {
+      left: 67px;
+      background-image: url(../images/index/arrow_lf.png);
+    }
+    .swiper-button-next {
+      right: 67px;
+      background-image: url(../images/index/arrow_rt.png);
+    }
+    .swiper-container {
+      width: 479px;
+      padding-top: 25px;
+      margin: 0 auto;
+      .swiper-wrapper {
+        text-align: center;
+        .swiper-slide {
+          .loopbox {
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 193px;
+            font-size: 0;
+            img {
+              height: 241px;
+            }
+            .pic-txt {
+              padding: 5px 0;
+              border: 1px solid #ccc;
+              border-top: none;
+              background-color: #fff;
+              h3 {
+                line-height: 30px;
+                font-size: 16px;
+                color: #1d1d1d;
+              }
+              h4 {
+                line-height: 30px;
+                font-size: 14px;
+                color: #1d1d1d;
+              }
+            }
+          }
+        }
+        .swiper-slide-active {
+          transform: translateY(-25px) !important;
+          z-index: 5;
+          position: relative;
+          right: 50px;
+        }
+        .swiper-slide-next {
+            position: relative;
+            right: 100px;
+        }
+      }
+    }
+  }
+
+}

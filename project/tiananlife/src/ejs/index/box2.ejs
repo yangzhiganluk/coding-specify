@@ -1,0 +1,21 @@
+<div class="box2">
+    <div class="box-title">
+        <img src="images/index/productservice.png" alt="产品服务">
+    </div>
+    <div class="box-content">
+        <ul class="clearfix">
+            <% for(var i=0; i< data.indexData.box2Data.length; i++){ %>
+            <li class="pro-item">
+                <div class="pro-icon over">
+                    <div class="table-cell">
+                        <img src="images/index/<%= data.indexData.box2Data[i].src %>" alt="over">
+                    </div>
+                </div>
+                <h3 class="pro-title"><%= data.indexData.box2Data[i].cname %></h3>
+                <p class="pro-en"><%= data.indexData.box2Data[i].ename %></p>
+                <div class="line"></div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

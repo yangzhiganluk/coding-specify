@@ -1,0 +1,12 @@
+.box3{
+  .content-box {
+    max-width: 860px;
+    margin: 0 auto;
+    li {
+      margin-bottom: 23px;
+      &.justify {
+        margin: 0 70px;
+      }
+    }
+  }
+}

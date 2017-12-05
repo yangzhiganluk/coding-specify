@@ -1,0 +1,22 @@
+<div class="box2">
+    <div class="wrapper">
+        <div class="box-title">
+            <img src="images/index/02.png" alt="文化">
+        </div>
+        <div class="box-content">
+            <ul class="clearfix">
+                <% for(var i=0; i< data.indexData.box2.length; i++){ %>
+                <li class="fl">
+                    <div class="img-box" align="center">
+                        <img src="images/index/<%= data.indexData.box2[i].src %>" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <p class="name"><%= data.indexData.box2[i].name %></p>
+                        <p class="txt"><%= data.indexData.box2[i].txt %></p>
+                    </div>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

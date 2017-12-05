@@ -1,0 +1,42 @@
+.thinking {
+  margin-bottom: 218px;
+  .box-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center
+  }
+  .box-content {
+    .subbox {
+      padding-bottom: 26px;
+      margin-bottom: 30px;
+      width: $content-width;
+      border-bottom: 1px dashed #d2d2d2;
+      .img-box {
+        width: 258px;
+        height: 197px;
+      }
+      .att-content {
+        margin-left: 24px;
+        max-width: 640px;
+        h3 {
+          padding-top: 9px;
+          font-family: "Microsoft YaHei";
+          font-size: 20px;
+          color: #2c7eb5;
+        }
+        .line {
+          margin: 13px 0 15px 0;
+          width: 40px;
+          height: 5px;
+          background-color: #e95504;
+        }
+        p {
+          font-family: "PingFangSC Regular";
+          font-size: 14px;
+          color: #555555;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

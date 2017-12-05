@@ -1,0 +1,21 @@
+.box4 {
+  .deliver {
+    img {
+      height: 104px * $scale;
+    }
+  }
+  .Subscribe {
+    text-align: center;
+    font-size: 10px;
+    font-size: 1rem;
+    padding-top: 60px * $scale;
+    padding-bottom: 60px * $scale ;
+    a {
+      color: #949494;
+      text-decoration: none;
+      &:first-child {
+        margin-right: 10px * $scale;
+      }
+    }
+  }
+}

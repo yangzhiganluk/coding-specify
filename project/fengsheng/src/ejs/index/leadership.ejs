@@ -1,0 +1,23 @@
+<div class="leadership">
+    <div class="inner-title">
+            <span class="line"><b></b></span>
+            <span class="cn-title">企业领导</span>
+            <span class="en-title">Enterprise leadership</span>
+    </div>
+    <div class="leader-pics clearfix">
+        <ul>
+            <% for(var i=0; i<data.leadershipData.length; i++){ %>
+            <li>
+                <a href="coInfo.html">
+                <div>
+                    <img src="<%= data.leadershipData[i].src_c %>" alt="头像">
+                </div>
+                <p><span><%= data.leadershipData[i].name %></span>/<span><%= data.leadershipData[i].posi %></span></p>
+                </a>
+                <% if(i===data.leadershipData.length-1){ %>
+            </li>
+            <% } %>
+            <% } %>
+        </ul>
+    </div>
+</div>

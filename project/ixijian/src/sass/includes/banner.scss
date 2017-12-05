@@ -1,0 +1,24 @@
+.banner {
+  margin: 0 auto;
+  position: relative;
+  height: $height;
+  display: none;
+  .pic-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .inner-txt {
+    width: 1040px;
+    height: $height;
+    margin: 0 auto;
+    div:first-child {
+      display: table-cell;
+      width: 1040px;
+      vertical-align: middle;
+    }
+  }
+}

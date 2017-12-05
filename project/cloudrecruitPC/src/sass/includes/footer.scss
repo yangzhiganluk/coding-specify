@@ -1,0 +1,25 @@
+.footer {
+  background-color: #ebe8e8;
+  .footer-inner {
+    width: $footer-width;
+    margin: 0 auto;
+    color: #504e4e;
+    font-size: 14px;
+    .footer-info {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #d3d0d0;
+      li {
+        margin-left: 110px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    p {
+      font-size: 12px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}

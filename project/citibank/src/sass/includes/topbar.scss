@@ -1,0 +1,53 @@
+.topbar {
+  .topbar-inner {
+    margin: 0 auto;
+    height: 80px;
+    font-size: 0;
+    .logo {
+      height: 80px;
+      a {
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+      }
+    }
+    .nav {
+      height: 80px;
+      line-height: 80px;
+      ul li {
+        float: left;
+        padding: 34px 0 14px;
+        font-family: "Microsoft YaHei";
+        a {
+          display: block;
+          padding: 0 30px;
+          color: #333;
+          text-align: center;
+          border-right: 1px solid #333;
+          .cn {
+            font-size: 16px;
+            line-height: 16px;
+          }
+          .en {
+            margin-top: 8px;
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+        &:first-child+li+li {
+          a {
+            border-right: none;
+          }
+        }
+        &.active{
+          a {
+            color: #f5363c;
+            border-right-color: #f5363c;
+          }
+        }
+      }
+    }
+  }
+}

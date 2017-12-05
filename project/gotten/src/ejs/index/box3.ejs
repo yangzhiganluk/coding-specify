@@ -1,0 +1,18 @@
+<div class="box3" align="center">
+    <div class="top-title" >
+        <img src="images/index/03.png" alt="合作伙伴">
+    </div>
+    <div class="content-box">
+        <ul class="img-box clearfix">
+            <% for(var i=0; i< data.indexData.box3.length; i++){ %>
+            <% if(i%3==1){ %>
+            <li class="fl justify">
+            <% }else{ %>
+            <li class="fl">
+            <% } %>
+                <img src="images/index/<%= data.indexData.box3[i] %>" alt="partner">
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.box1 {
+  width: 980px;
+  margin: 0 auto;
+  .box-title {
+    margin: 50px auto 70px;
+  }
+  .box-content {
+    height: 309px;
+    background-color: #2361ab;
+    .img-box {
+      margin-top: -15px;
+    }
+    .txt-box {
+      padding-left: 20px;
+      width: 445px;
+      color: #fff;
+      .txt-head {
+        padding: 47px 0 33px 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .txt-body {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<div class="authority">
+    <div class="toptitle">
+        <img src="images/authority/title.png" alt="玺鉴权威">
+    </div>
+    <div class="pic-list">
+        <ul>
+            <% for(var i=0; i<data.coAuthority.length; i++ ){ %>
+            <% if(i%2==0){ %>
+            <li class="person clearfix p-left">
+            <% }else{ %>
+            <li class="person clearfix p-right">
+            <% } %>
+                <div class="portrait">
+                    <img src="images/authority/<%= data.coAuthority[i].src %>" alt="头像">
+                </div>
+                <div class="txt clearfix">
+                    <div class="info-head clearfix">
+                       <div class="titlewrap">
+                           <h3><%= data.coAuthority[i].name %></h3>
+                           <p><%= data.coAuthority[i].posi %></p>
+                       </div>
+                    </div>
+                    <div class="info-middle clearfix">
+                        <div class="line"></div>
+                    </div>
+                    <div class="info-detail"><%= data.coAuthority[i].info%></div>
+                </div>
+             </li>
+            <% } %>
+        </ul>
+        <div class="bottom-txt">
+            <img src="images/authority/bottom.png" alt="">
+        </div>
+    </div>
+</div>

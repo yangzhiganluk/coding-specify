@@ -1,0 +1,38 @@
+.box3 {
+  .pe-honor {
+    width: 660px;
+    margin-left: 60px;
+    .stitle1 {
+      font-size: 20px;
+      line-height: 30px;
+      color: #343170;
+    }
+    .short-line {
+      margin: 12px 0;
+      width: 25px;
+      height: 1px;
+      background-color: #b3b3b3;
+    }
+    .stitle2 {
+      margin-bottom: 26px;
+      color: #999;
+    }
+  }
+  .box-pic {
+    position: relative;
+    width: 252px;
+    height: 355px;
+    .txt-box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 15px;
+      text-align: center;
+      .name {
+        font-size: 18px;
+        color: #343270;
+      }
+    }
+  }
+}

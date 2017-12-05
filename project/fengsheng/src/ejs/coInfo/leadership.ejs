@@ -1,0 +1,24 @@
+<div class="leadership">
+    <div class="inner-title">
+        <span class="line"><b></b></span>
+        <span class="cn-title">企业领导</span>
+        <span class="en-title">Enterprise leadership</span>
+    </div>
+    <div class="leader-pics clearfix">
+        <ul class="clearfix">
+            <% for(var i=0; i<data.leadershipData.length; i++){ %>
+            <li class="fl clearfix">
+                <div class="fl portrait">
+                    <img src="<%= data.leadershipData[i].src_r %>" alt="头像">
+                </div>
+                <div class="fl remark">
+                    <h3><%= data.leadershipData[i].name %>/<%= data.leadershipData[i].posi %></h3>
+                    <p><%= data.leadershipData[i].intro %></p>
+                </div>
+                <% if(i===data.leadershipData.length-1){ %>
+                    </li>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="topbar">
+    <div class="topbar-inner clearfix">
+        <div class="logo fl">
+            <a href="javascript:void(0)"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="nav fr">
+            <ul>
+                <% for(var i=0; i<data.topBarData.length;i++){%>
+                <% /*传入标签中加入active类*/%>
+                <% if(data.topBarData[i].key == data.filename ){ %>
+                <li class="active">
+                    <% }else{ %>
+                <li>
+                    <% } %>
+                    <a href="<%= data.topBarData[i].href %>">
+                        <span class="cn"><%= data.topBarData[i].name  %></span>
+                        <span class="en"><%= data.topBarData[i].en  %></span>
+                        <i class="underline"></i>
+                    </a>
+                <% /*最后一个li标签添加</li>兼容ie*/%>
+                <% if(i===data.topBarData.length-1){%>
+                </li>
+                <% } %>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>
