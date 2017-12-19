@@ -1,0 +1,15 @@
+//Created by lollipop 2017/12/18
+.header {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  .header-content {
+    width: 821px;
+    margin: 0 auto;
+    padding: 42px 0;
+    font-size: 14px;
+    color: #999;
+  }
+}

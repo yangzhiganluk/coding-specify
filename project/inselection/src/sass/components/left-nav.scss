@@ -1,0 +1,31 @@
+//Created by lollipop 2017/12/18
+.left-nav {
+  padding-top: 26px;
+  text-align: center;
+  width: 196.5px; //写给不支持calc的浏览器
+  --widthA: 1366px;
+  --widthB: calc(var(--widthA) - 973px);
+  --widthC: calc(var(--widthB) / 2);
+  width: var(--widthC);
+  .logo {
+    width: 113px;
+    height: 35px;
+  }
+  .list {
+    margin-top: 96px;
+  }
+  .list-item {
+    height: 55px;
+    line-height: 55px;
+    background-color: transparent;
+    a {
+      color: #fff;
+      font-size: 18px;
+    }
+    &.active,
+    &:hover {
+      background-color: #868585;
+      box-shadow: 0 5px 13px rgba(4,0,0,.12);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//Created by juanl on 2017/7/14.
+doctype html
+html(lang='en')
+    include includes/head
+    body
+        .wrapper
+            .wrapper-content.justify-center.box-border.clearfix
+                .pull-left
+                    include components/left-nav
+                .news.justify-center.box-border
+                    include components/header
+                    .press.justify-center
+                        include components/news-content
+                    include components/footer
+        script(src="js/jquery.min.js")
+        script(src="js/jquery.nicescroll.min.js")
+        script(src="js/bundle.js")

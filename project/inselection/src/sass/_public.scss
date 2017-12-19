@@ -1,0 +1,56 @@
+//水平居中
+.justify-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+//垂直居中
+.vertical-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+//边框阴影
+.box-border {
+  box-shadow: 0 1px 3px rgba(0,37,55,.05);
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.wrapper-content {
+  position: absolute;
+  width: 1366px;
+  height: 100%;
+  background-color: rgba(255,255,255,.3);
+}
+.news {
+  position: absolute;
+  transform: scale3d(1, 1, 1);
+  width: 973px;
+  height: 100%;
+  background-color: rgb(255,255,255);
+}
+.press {
+  position: absolute;
+  top: 100px;
+  margin-bottom: 100px;
+  width: 821px;
+  height: 80%;
+  background-color: rgb(255,255,255);
+}

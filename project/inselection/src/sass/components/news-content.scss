@@ -1,0 +1,44 @@
+//Created by lollipop 2017/12/18
+.news-content {
+  .section1 {
+    text-align: center;
+    h2 {
+      color: #333;
+      font-size: 24px;
+    }
+    .hor-line {
+      position: relative;
+      padding: 11px 0;
+      &:before {
+        @include border-top;
+      }
+      &:after {
+        @include border-bottom;
+      }
+      span,
+      b {
+        color: $border-color;
+        font-size: 12px;
+      }
+      b {
+        margin: 0 5px;
+      }
+    }
+    h3 {
+      color: #888;
+      font-size: 16px;
+    }
+  }
+  .section2 {
+    .credit-img {
+      padding: 20px 0;
+      text-align: center;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}

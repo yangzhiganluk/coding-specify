@@ -1,0 +1,31 @@
+//created by lollipop 2017/12/18
+.news-content
+    .section1
+        h2
+            | #{locals.newsContent.title}
+        .hor-line
+            span
+                | 时间：#{locals.newsContent.subTitle.time}
+            b |
+            span
+                | 作者：#{locals.newsContent.subTitle.author}
+            b |
+            span
+                | 来源：#{locals.newsContent.subTitle.src}
+        each item in locals.appealing
+            h3
+                | #{item}
+    .section2
+        .credit-img.hornor
+            img(src="images/credit.jpg")
+        .txt
+            each txt in locals.hornor
+                p
+                 | #{txt}
+    .section2
+        .credit-img.forum
+            img(src="images/forum.jpg")
+        .txt
+            each txt in locals.forum
+                p
+                    | #{txt}

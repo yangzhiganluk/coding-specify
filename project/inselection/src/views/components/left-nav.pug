@@ -1,0 +1,13 @@
+//created by lollipop 2017/12/18
+.left-nav
+    img.logo(src="images/logo51jrq.png")
+    ul.list
+        each item,index in locals.leftNav
+            if index == 5
+                li.list-item.active
+                    a(href=item.href)
+                        | #{item.name}
+            else
+                li.list-item
+                    a(href=item.href)
+                        | #{item.name}
