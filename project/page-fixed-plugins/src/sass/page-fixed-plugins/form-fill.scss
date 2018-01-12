@@ -3,6 +3,8 @@
   min-width: 530px;
   .layui-layer-title {
     padding-right: 0;
+    height: 70px;
+    line-height: 70px;
     background-color: #fff;
     text-align: center;
     font-size: 24px;
@@ -21,7 +23,7 @@
   }
   .form-fill {
     display: block;
-    margin: 18px 46px;
+    margin: 18px 35px;
     .info {
       margin-bottom: 20px;
       font-size: 14px;

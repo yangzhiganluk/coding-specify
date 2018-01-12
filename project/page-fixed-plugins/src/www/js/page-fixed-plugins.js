@@ -60,20 +60,6 @@ require(['jquery', 'bundle'], function ($, bundle) {
         }, 30);
     };
 
-    layui.use('layer', function () {
-        const layer = layui.layer;
-        layer.open({
-            type: 1, //页面层
-            shade: 0.8,
-            title: false,
-            skin: "form-succ-wrapper",
-            scrollbar: false,
-            content: $('#form-succ'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
-            btn: ['知道了'],
-            btnAlign: 'c'
-        });
-    });
-
     bundle.rightAlert(busi_speak);
     bundle.rightAlert(online_consult);
     bundle.rightAlert(qrcode);
