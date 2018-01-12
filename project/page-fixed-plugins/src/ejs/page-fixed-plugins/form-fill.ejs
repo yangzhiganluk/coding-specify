@@ -1,0 +1,45 @@
+<div class="form-fill" id="form-fill">
+    <div class="info">
+        尊敬的用户您好，非常感谢您对51金融圈的关注，如您对51金融圈有好的建议或者意见，请留言，我们会努力达到您的满意，谢谢支持！
+    </div>
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label"><i class="asterisk">*</i>姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="username" required  lay-verify="required|username" placeholder="请填写您的姓名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"><i class="asterisk">*</i>邮箱</label>
+            <div class="layui-input-block">
+                <input type="text" name="email" required  lay-verify="required|email" placeholder="请填写您的邮箱地址，便于及时通知到您" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">公司名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="corpname" placeholder="请填写您的公司名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-block">
+                <input type="text" name="conact" placeholder="请留下联系方式，便于我们更好地满足您的需求" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label"><i class="asterisk">*</i>建议意见</label>
+            <div class="layui-input-block">
+                <textarea name="reco" required lay-verify="required" placeholder="请填写您对51金融圈的建议或意见，我们会以最 大的努力让您满意" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                    <div  class="submit-btn" lay-submit  lay-filter="immidate">
+                        <img src="img/btn.png" alt="立即提交">
+                    </div>
+                <!--<button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+            </div>
+        </div>
+    </form>
+</div>

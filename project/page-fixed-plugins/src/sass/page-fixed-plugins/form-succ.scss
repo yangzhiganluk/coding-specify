@@ -1,0 +1,43 @@
+//Created by lollipop 2018/1/12
+.form-succ-wrapper {
+  min-width: 530px;
+  .layui-layer-setwin {
+    right: 6px;
+    top: 6px;
+    a {
+      right: 35px;
+      top: 35px;
+    }
+    .layui-layer-ico {
+      background: url(../img/exit.png) no-repeat;
+    }
+  }
+  .form-succ {
+    display: block;
+    padding-top:40px;
+    padding-left: 46px;
+    padding-right: 46px;
+    .icon-gou {
+      text-align: center;
+      h3 {
+        margin: 8px 0 20px 0;
+        font-size: 26px;
+        color: #666;
+      }
+    }
+    p {
+      line-height: 28px;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+  .layui-layer-btn {
+    padding-bottom: 20px;
+    .layui-layer-btn0 {
+      border-radius: 20px;
+      border-color: #d2d2d2;
+      background-color: #ffffff;
+      color: #d2d2d2;
+    }
+  }
+}

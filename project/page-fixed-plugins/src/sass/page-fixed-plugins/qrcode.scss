@@ -1,0 +1,28 @@
+//Created by lollipop 2018/1/11
+.qrcode {
+  border: none !important;
+  .icon-qrcode {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/qr-code.png);
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+  .right-alert {
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 0;
+    display: none;
+    width: 220px;
+    height: 143px;
+    text-align: right;
+    img {
+      width: 141px;
+      height: 143px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+//Created by lollipop 2018/1/11
+.animate-fadein-upwards {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadein-upwards ease 1s forwards;
+}
+
+@keyframes fadein-upwards {
+ to {
+    opacity: 1;
+    transform: translateY(0);
+ }
+}

@@ -1,0 +1,50 @@
+//Created by lollipop 2018/1/11
+.online-consult {
+  .right-alert {
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 0;
+    display: none;
+    opacity: 0;
+    width: 220px;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    .header {
+      background-color: #f3f0f0;
+      padding: 11px 14px 8px 14px;
+    }
+    .body {
+      padding: 0 14px;
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      li {
+        height: 50px;
+        line-height: 50px;
+        border-top: 1px dashed #eee;
+        &:first-child {
+          border-top: none;
+        }
+        label {
+          width: 60px;
+          text-align: justify;
+          overflow: hidden;
+          vertical-align: top;
+          i {
+            display: inline-block;
+            width: 100%;
+            height: 0;
+          }
+        }
+        .icon-qqtalk {
+          width: 96px;
+          height: 28px;
+          background: url(../img/qq-talk.png) no-repeat center center;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

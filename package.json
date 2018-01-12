@@ -25,6 +25,7 @@
     "gulp-sourcemaps": "^2.5.1",
     "http-proxy-middleware": "^0.17.4",
     "jsx-loader": "^0.13.2",
+    "layui-src": "^2.2.5",
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
     "pug": "^2.0.0-rc.2",

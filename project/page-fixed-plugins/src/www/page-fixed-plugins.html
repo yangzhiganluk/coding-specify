@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="lollipop">
+    <title>page-fixed-plugins</title>
+    <link rel="stylesheet" href="css/page-fixed-plugins.css">
+    <link rel="stylesheet" href="css/layui.css">
+</head>
+<body>
+    <div class="form-fill" id="form-fill">
+    <div class="info">
+        尊敬的用户您好，非常感谢您对51金融圈的关注，如您对51金融圈有好的建议或者意见，请留言，我们会努力达到您的满意，谢谢支持！
+    </div>
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label"><i class="asterisk">*</i>姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="username" required  lay-verify="required|username" placeholder="请填写您的姓名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"><i class="asterisk">*</i>邮箱</label>
+            <div class="layui-input-block">
+                <input type="text" name="email" required  lay-verify="required|email" placeholder="请填写您的邮箱地址，便于及时通知到您" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">公司名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="corpname" placeholder="请填写您的公司名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-block">
+                <input type="text" name="conact" placeholder="请留下联系方式，便于我们更好地满足您的需求" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label"><i class="asterisk">*</i>建议意见</label>
+            <div class="layui-input-block">
+                <textarea name="reco" required lay-verify="required" placeholder="请填写您对51金融圈的建议或意见，我们会以最 大的努力让您满意" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                    <div  class="submit-btn" lay-submit  lay-filter="immidate">
+                        <img src="img/btn.png" alt="立即提交">
+                    </div>
+                <!--<button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+            </div>
+        </div>
+    </form>
+</div>
+    <div class="form-succ" id="form-succ">
+    <div class="icon-gou">
+        <img src="img/gou.png" alt="信息提交成功">
+        <h3>信息提交成功</h3>
+    </div>
+    <p>您的信息已成功提交到公司后台，我们会尽快安排专业顾问与您联系，非常感谢您的配合，祝您生活愉快！</p>
+</div>
+    <div class="page-right">
+        <div class="cube busi-speak">
+    <p>商务</p>
+    <p>洽谈</p>
+    <div class="right-alert">专线电话：60278362</div>
+</div>
+
+
+
+        <div class="cube online-consult">
+    <p>在线</p>
+    <p>咨询</p>
+    <div class="right-alert">
+        <div class="header">
+            客服QQ及电话
+        </div>
+        <ul class="body">
+            <li>
+                <div>
+                    <label class="inline-block">在线交谈<i></i></label>：
+                    <a href="tencent://message/?uin=2793554017&Site=在线QQ&amp;Menu=yes"><span class="inline-block icon-qqtalk"></span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label class="inline-block">客服电话<i></i></label>：
+                    <span class="inline-block">400-885-6112</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label class="inline-block">服务时间<i></i></label>：
+                    <span class="inline-block">09：00-18：00</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+        <div class="cube opinion">
+    <p>意见</p>
+    <p>反馈</p>
+    <div class="right-alert"  style="display: none; left: 0px; width: 0px;">意见反馈</div>
+</div>
+        <div class="cube qrcode">
+    <div class="icon-qrcode"></div>
+    <div class="right-alert">
+        <img src="img/pop-qrcode.png" alt="51jrq">
+    </div>
+</div>
+        <div class="cube gotop" id="gotop">
+    <div class="icon-gotop"></div>
+</div>
+    </div>
+<script src="js/layui.js"></script>
+<script src="js/require.js" data-main="js/page-fixed-plugins"></script>
+</body>
+</html>

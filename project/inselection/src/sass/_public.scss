@@ -41,6 +41,15 @@
 }
 .news {
   position: absolute;
+  //Mozilla内核浏览器：firefox3.5+
+  -moz-transform: scale3d(1, 1, 1);
+  //Webkit内核浏览器：Safari and Chrome
+  -webkit-transform: scale3d(1, 1, 1);
+  //Opera
+  -o-transform: scale3d(1, 1, 1);
+  //IE9
+  -ms-transform: scale3d(1, 1, 1);
+  //W3C标准
   transform: scale3d(1, 1, 1);
   width: 973px;
   height: 100%;
