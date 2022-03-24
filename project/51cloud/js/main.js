@@ -5,6 +5,7 @@ var headerWayPoint = function headerWayPoint() {
     var textAreaEle = $('.text-area');
     if (textAreaEle.length > 0) {
         textAreaEle.waypoint(function (direction) {
+            console.log(this.element)
             if (direction === 'down') {
                 setTimeout(function () {
                     $('.intro-animate-1').addClass('animated fadeInUp');
